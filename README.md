@@ -33,4 +33,28 @@ https://github.com/JuliaPlots/Plots.jl.git
 
 https://github.com/JuliaNLSolvers/LsqFit.jl.git
 
+https://node.js.org/
+
+https://nodejs.org/en/
+
+https://nodejs.org/en/download/package-manager
+
+https://github.com/nodejs
+
+https://github.com/nodejs/node
+
+https://www.python.org/
+
+https://www.python.org/downloads/
+
+https://github.com/python
+
+https://github.com/python/cpython
+
+https://www.mingw-w64.org/
+
+https://www.mingw-w64.org/downloads/
+
+https://sourceforge.net/projects/mingw-w64/
+
 ![]()
