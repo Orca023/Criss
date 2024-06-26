@@ -55,6 +55,12 @@ https://www.mingw-w64.org/
 
 https://www.mingw-w64.org/downloads/
 
+https://github.com/niXman
+
+https://github.com/nixman/mingw-builds
+
+https://github.com/niXman/mingw-builds-binaries/releases
+
 https://sourceforge.net/projects/mingw-w64/
 
 ![]()
