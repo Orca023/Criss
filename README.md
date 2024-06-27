@@ -17,17 +17,17 @@ Julia, Python, Node.js, C
 
 Compiler:
 
-Minimalist GNU on Windows: mingw64-8.1.0-release-posix-seh-rt_v6-rev0
+Minimalist GNU on Windows: mingw64 - 8.1.0 - release - posix - seh - rt_v6 - rev0
 
 Interpreter:
 
-node-v20.15.0
+node - v20.15.0
 
-python-3.12.4
+python - 3.12.4
 
-julia-1.10.4
+julia - 1.10.4
 
-julia-1.10.4-packages:
+julia - 1.10.4 - packages:
 
 Artifacts
 
