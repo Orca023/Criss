@@ -49,70 +49,61 @@ https://github.com/niXman/mingw-builds-binaries/releases
 [程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
 https://sourceforge.net/projects/mingw-w64/
 
-[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方網站](https://node.js.org/): 
+[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站](https://node.js.org/): 
 https://node.js.org/
 
-[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方網站](https://nodejs.org/en/): 
+[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方網站](https://nodejs.org/en/): 
 https://nodejs.org/en/
 
-[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方下載頁](https://nodejs.org/en/download/package-manager): 
+[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方下載頁](https://nodejs.org/en/download/package-manager): 
 https://nodejs.org/en/download/package-manager
 
-[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶](https://github.com/nodejs): 
+[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶](https://github.com/nodejs): 
 https://github.com/nodejs
 
-[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
+[程式設計 JavaScript 語言解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
 https://github.com/nodejs/node.git
 
-[程式設計語言 Python 解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
 https://www.python.org/
 
-[](https://www.python.org/downloads/)
-
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方下載頁](https://www.python.org/downloads/): 
 https://www.python.org/downloads/
 
-[](https://github.com/python)
-
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方 GitHub 網站賬戶](https://github.com/python): 
 https://github.com/python
 
-[](https://github.com/python/cpython)
-
+[程式設計 Python 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫](https://github.com/python/cpython): 
 https://github.com/python/cpython.git
 
-[](https://julialang.org/)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方網站](https://julialang.org/): 
 https://julialang.org/
 
-[](https://julialang.org/downloads/)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方下載頁](https://julialang.org/downloads/): 
 https://julialang.org/downloads/
 
-[](https://github.com/JuliaLang/julia.git)
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方 GitHub 網站賬戶](https://github.com/JuliaLang): 
+https://github.com/JuliaLang
 
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫](https://github.com/JuliaLang/julia): 
 https://github.com/JuliaLang/julia.git
 
-[](https://github.com/JuliaRegistries/General.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
 https://github.com/JuliaRegistries/General.git
 
-[](https://github.com/JuliaIO/JSON.jl.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 JSON.jl 模組 GitHub 網站倉庫](https://github.com/JuliaIO/JSON.jl.git): 
 https://github.com/JuliaIO/JSON.jl.git
 
-[](https://github.com/JuliaWeb/HTTP.jl.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 HTTP.jl 模組 GitHub 網站倉庫](https://github.com/JuliaWeb/HTTP.jl.git): 
 https://github.com/JuliaWeb/HTTP.jl.git
 
-[](https://github.com/quinnj/JSON3.jl.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 JSON3.jl 模組 GitHub 網站倉庫](https://github.com/quinnj/JSON3.jl.git): 
 https://github.com/quinnj/JSON3.jl.git
 
-[](https://github.com/JuliaPlots/Plots.jl.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 Plots.jl 模組 GitHub 網站倉庫](https://github.com/JuliaPlots/Plots.jl.git): 
 https://github.com/JuliaPlots/Plots.jl.git
 
-[](https://github.com/JuliaNLSolvers/LsqFit.jl.git)
-
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 LsqFit.jl 模組 GitHub 網站倉庫](https://github.com/JuliaNLSolvers/LsqFit.jl.git): 
 https://github.com/JuliaNLSolvers/LsqFit.jl.git
 
 ![]()
