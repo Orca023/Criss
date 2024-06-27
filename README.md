@@ -33,29 +33,23 @@ node-v20.15.0
 
 ---
 
-[gcc, g++ 編譯器(Compiler): MinGW-w64 官方網站](https://www.mingw-w64.org/)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方網站](https://www.mingw-w64.org/):
+https://www.mingw-w64.org/
 
-[https://www.mingw-w64.org/]
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/):
+https://www.mingw-w64.org/downloads/
 
-[gcc, g++ 編譯器(Compiler): MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman):
+https://github.com/niXman
 
-[https://www.mingw-w64.org/downloads/]
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds):
+https://github.com/nixman/mingw-builds.git
 
-[gcc, g++ 編譯器(Compiler): MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases):
+https://github.com/niXman/mingw-builds-binaries/releases
 
-[https://github.com/niXman]
-
-[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds)
-
-[https://github.com/nixman/mingw-builds.git]
-
-[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases)
-
-[https://github.com/niXman/mingw-builds-binaries/releases]
-
-[gcc, g++ 編譯器(Compiler): MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/)
-
-[https://sourceforge.net/projects/mingw-w64/]
+[gcc, g++ 編譯器(Compiler): MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/):
+https://sourceforge.net/projects/mingw-w64/
 
 [](https://node.js.org/)
 
@@ -133,6 +127,6 @@ https://github.com/JuliaNLSolvers/LsqFit.jl.git
 
 ---
 
-[百度網盤 pan.baidu.com]([https://www.google.com](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k))
+[百度網盤 pan.baidu.com](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k)
 
 提取碼：me5k
