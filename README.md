@@ -127,6 +127,7 @@ https://github.com/JuliaNLSolvers/LsqFit.jl.git
 
 ---
 
-[百度網盤 pan.baidu.com](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k)
+依賴工具(packages)[百度網盤 pan.baidu.com](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k)下載頁:
+https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k
 
 提取碼：me5k
