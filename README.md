@@ -31,46 +31,40 @@ node-v20.15.0
 
 ---
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方網站](https://www.mingw-w64.org/): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方網站](https://www.mingw-w64.org/): 
 https://www.mingw-w64.org/
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/): 
 https://www.mingw-w64.org/downloads/
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman): 
 https://github.com/niXman
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds): 
 https://github.com/nixman/mingw-builds.git
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases): 
 https://github.com/niXman/mingw-builds-binaries/releases
 
-[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
 https://sourceforge.net/projects/mingw-w64/
 
-[](https://node.js.org/)
-
+[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方網站](https://node.js.org/): 
 https://node.js.org/
 
-[](https://nodejs.org/en/)
-
+[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方網站](https://nodejs.org/en/): 
 https://nodejs.org/en/
 
-[](https://nodejs.org/en/download/package-manager)
-
+[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方下載頁](https://nodejs.org/en/download/package-manager): 
 https://nodejs.org/en/download/package-manager
 
-[](https://github.com/nodejs)
-
+[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站賬戶](https://github.com/nodejs): 
 https://github.com/nodejs
 
-[](https://github.com/nodejs/node)
-
+[程式設計語言 JavaScript 解釋器 ( Interpreter ) 之 Node.js 官方 GitHub 網站倉庫](https://github.com/nodejs/node): 
 https://github.com/nodejs/node.git
 
-[](https://www.python.org/)
-
+[程式設計語言 Python 解釋器 ( Interpreter ) 官方網站](https://www.python.org/): 
 https://www.python.org/
 
 [](https://www.python.org/downloads/)
