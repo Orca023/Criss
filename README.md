@@ -33,79 +33,79 @@ Artifacts
 
 Base64
 
-BitFlags-0.1.8
+BitFlags - 0.1.8
 
-CodecZlib-0.7.4
+CodecZlib - 0.7.4
 
-ConcurrentUtilities-2.4.1
+ConcurrentUtilities - 2.4.1
 
 Dates
 
-ExceptionUnwrapping-0.1.10
+ExceptionUnwrapping - 0.1.10
 
-HTTP-1.10.8
+HTTP - 1.10.8
 
 InteractiveUtils
 
-JLLWrappers-1.5.0
+JLLWrappers - 1.5.0
 
-JSON-0.21.4
+JSON - 0.21.4
 
 Libdl
 
 Logging
 
-LoggingExtras-1.0.3
+LoggingExtras - 1.0.3
 
 Markdown
 
-MbedTLS-1.1.9
+MbedTLS - 1.1.9
 
-MbedTLS_jll-2.28.2+0
+MbedTLS_jll - 2.28.2+0
 
 Mmap
 
-MozillaCACerts_jll-2022.10.11
+MozillaCACerts_jll - 2022.10.11
 
-NetworkOptions-1.2.0
+NetworkOptions - 1.2.0
 
-OpenSSL-1.4.3
+OpenSSL - 1.4.3
 
-OpenSSL_jll-3.0.13+1
+OpenSSL_jll - 3.0.13+1
 
-Parsers-2.8.1
+Parsers - 2.8.1
 
-PrecompileTools-1.2.1
+PrecompileTools - 1.2.1
 
-Preferences-1.4.3
+Preferences - 1.4.3
 
 Printf
 
 Random
 
-SHA-0.7.0
+SHA - 0.7.0
 
 Serialization
 
-SimpleBufferStream-1.1.0
+SimpleBufferStream - 1.1.0
 
 Sockets
 
-TOML-1.0.3
+TOML - 1.0.3
 
 Test
 
-TranscodingStreams-0.10.9
+TranscodingStreams - 0.10.9
 
 TranscodingStreams.extensions
 
-URIs-1.5.1
+URIs - 1.5.1
 
 UUIDs
 
 Unicode
 
-Zlib_jll-1.2.13+0
+Zlib_jll - 1.2.13+0
 
 ![]()
 
