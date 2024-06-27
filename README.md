@@ -31,22 +31,22 @@ node-v20.15.0
 
 ---
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 官方網站](https://www.mingw-w64.org/): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方網站](https://www.mingw-w64.org/): 
 https://www.mingw-w64.org/
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/): 
 https://www.mingw-w64.org/downloads/
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman): 
 https://github.com/niXman
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds): 
 https://github.com/nixman/mingw-builds.git
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases): 
 https://github.com/niXman/mingw-builds-binaries/releases
 
-[C 語言 gcc, g++ 編譯器(Compiler): MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
+[C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
 https://sourceforge.net/projects/mingw-w64/
 
 [](https://node.js.org/)
