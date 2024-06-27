@@ -16,41 +16,46 @@ Julia, Python, Node.js, C
 ---
 
 Compiler:
+
 Minimalist GNU on Windows
+
 mingw64-8.1.0-release-posix-seh-rt_v6-rev0
 
 Interpreter:
+
 julia-1.10.4
+
 python-3.12.4
+
 node-v20.15.0
 
 ![]()
 
 ---
 
-[](https://www.mingw-w64.org/)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方網站](https://www.mingw-w64.org/)
 
-https://www.mingw-w64.org/
+[https://www.mingw-w64.org/]
 
-[](https://www.mingw-w64.org/downloads/)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/)
 
-https://www.mingw-w64.org/downloads/
+[https://www.mingw-w64.org/downloads/]
 
-[](https://github.com/niXman)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman)
 
-https://github.com/niXman
+[https://github.com/niXman]
 
-[](https://github.com/nixman/mingw-builds)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds)
 
-https://github.com/nixman/mingw-builds
+[https://github.com/nixman/mingw-builds.git]
 
-[](https://github.com/niXman/mingw-builds-binaries/releases)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases)
 
-https://github.com/niXman/mingw-builds-binaries/releases
+[https://github.com/niXman/mingw-builds-binaries/releases]
 
-[](https://sourceforge.net/projects/mingw-w64/)
+[gcc, g++ 編譯器(Compiler): MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/)
 
-https://sourceforge.net/projects/mingw-w64/
+[https://sourceforge.net/projects/mingw-w64/]
 
 [](https://node.js.org/)
 
