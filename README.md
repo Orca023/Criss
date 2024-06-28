@@ -10,9 +10,9 @@
 
 ---
 
-Node.js: Interface.js, application.js
+Node.js : Interface.js, application.js
 
-計算機程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 與作業系統 ( Operating System ) 環境配置釋明:
+計算機程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 與作業系統 ( Operating System ) 環境配置釋明 :
 
 Title: Node.js server v20161211
 
@@ -32,17 +32,17 @@ Interpreter: node-v20.15.0-linux-arm64.tar.gz
 
 微軟視窗系統 ( Windows x86_64 )
 
-控制臺命令列 ( cmd ) 運行啓動指令:
+控制臺命令列 ( cmd ) 運行啓動指令 :
 
 C:\Criss> C:/Criss/NodeJS/nodejs-20.15.0/node.exe C:/Criss/js/application.js configFile=C:/Criss/config.txt webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
 
-控制臺命令列 ( bash ) 運行啓動指令:
+控制臺命令列 ( bash ) 運行啓動指令 :
 
 root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/Criss/config.txt webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=/home/Criss/Intermediary/ monitor_file=C:/home/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
-控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類似 Key=Value 的形式:
+控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類似 Key=Value 的形式 :
 
 1. (必), (自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  C:/Criss/NodeJS/nodejs-20.15.0/node.exe
 
