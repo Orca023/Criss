@@ -44,39 +44,45 @@ root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/C
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類似 Key=Value 的形式 :
 
-1. (必), (自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  C:/Criss/NodeJS/nodejs-20.15.0/node.exe
+1. (必), (自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值 :  C:/Criss/NodeJS/nodejs-20.15.0/node.exe
 
-2. (必), (自定義), 語言 ( JavaScript ) 程式代碼脚本 ( Script ) 檔 ( application.js ) 的存儲路徑全名:  C:/Criss/js/application.js
+2. (必), (自定義), 語言 ( JavaScript ) 程式代碼脚本 ( Script ) 檔 ( application.js ) 的存儲路徑全名, 預設值 :  C:/Criss/js/application.js
 
    注意, 因爲「application.js」檔中脚本代碼需要加載引入「Interface.js」檔, 所以需要保持「application.js」檔與「Interface.js」檔在相同目錄下, 不然就需要手動修改「application.js」檔中有關引用「Interface.js」檔的加載路徑代碼, 以確保能正確引入「Interface.js」檔.
 
-3. (選) (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 三選一), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  interface_Function=file_Monitor
+3. (暫未做) (選) (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 配置文檔的保存路徑全名, 預設值 :  configFile=C:/Criss/config.txt
 
-4. (暫未做) (選) (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  configFile=C:/Criss/config.txt
+4. (選) (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 三選一), 選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值 :  interface_Function=file_Monitor
 
-5. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  webPath=C:/Criss/html/
+以下是當參數 : interface_Function 取 : file_Monitor 值時, 可在控制臺命令列傳入的參數 :
 
-6. (選) (鍵 host 固定, 值 ::0 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  host=::0
+5. (選) (鍵 is_monitor 固定, 值 false 自定義, [ true, false ] 二選一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值 :  is_monitor=false
 
-7. (選) (鍵 port 固定, 值 10001 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  port=10001
+6. (選) (鍵 delay 固定, 值 20 自定義), 監聽文檔輪詢延遲時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值 :  delay=20
 
-8. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  Key=username:password
+7. (選) (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值 :  monitor_dir=C:/Criss/Intermediary/
 
-9. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  number_cluster_Workers=0
+8. (選) (鍵 monitor_file 固定, 值 C:/Criss/Intermediary/intermediary_write_C.txt 自定義), 用於接收傳值的媒介文檔 ( 監聽文檔 ) 存儲路徑全名, 預設值 :  monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt
 
-10. (選) (鍵 is_monitor 固定, 值 false 自定義, [ true, false ] 二選一), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  is_monitor=false
+9. (選) (鍵 output_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於輸出運算結果傳值的媒介目錄 ( 運算結果文檔儲存文件夾 ) 存儲路徑全名, 預設值 :  output_dir=C:/Criss/Intermediary/
 
-11. (選) (鍵 delay 固定, 值 20 自定義, 單位爲毫秒), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  delay=20
+10. (選) (鍵 output_file 固定, 值 C:/Criss/Intermediary/intermediary_write_Nodejs.txt 自定義), 用於輸出運算結果傳值的媒介文檔 ( 運算結果輸出保存文檔 ) 存儲路徑全名, 預設值 :  output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt
 
-12. (選) (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  monitor_dir=C:/Criss/Intermediary/
+11. (選) (鍵 temp_cache_IO_data_dir 固定, 值 C:/Criss/temp/ 自定義), 用於暫存傳入傳出數據的臨時媒介文件夾路徑全名, 預設值 :  temp_cache_IO_data_dir=C:/Criss/temp/
 
-13. (選) (鍵 monitor_file 固定, 值 C:/Criss/Intermediary/intermediary_write_C.txt 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt
+以下是當參數 : interface_Function 取 : http_Server 值時, 可在控制臺命令列傳入的參數 :
 
-14. (選) (鍵 output_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  output_dir=C:/Criss/Intermediary/
+5. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 自定義伺服器 ( http_Server ) 運行根目錄項目空間路徑全名, 預設值 :  webPath=C:/Criss/html/
 
-15. (選) (鍵 output_file 固定, 值 C:/Criss/Intermediary/intermediary_write_Nodejs.txt 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt
+6. (選) (鍵 host 固定, 值 ::0 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值 :  host=::0
 
-16. (選) (鍵 temp_cache_IO_data_dir 固定, 值 C:/Criss/temp/ 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名:  temp_cache_IO_data_dir=C:/Criss/temp/
+7. (選) (鍵 port 固定, 值 10001 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值 :  port=10001
+
+8. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值 :  Key=username:password
+
+9. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值 :  number_cluster_Workers=0
+
+以下是當參數 : interface_Function 取 : http_Client 值時, 可在控制臺命令列傳入的參數 :
 
 ![]()
 
