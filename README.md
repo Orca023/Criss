@@ -92,6 +92,14 @@ root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/C
 
 18. (選) (鍵 URL 固定, 值 http://[::1]:10001/index.html 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=http://[::1]:10001/index.html
 
+19. (選) (鍵 method 固定, 值 POST 自定義, 例如 [ POST, GET ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  Method=POST
+
+20. (選) (鍵 time_out 固定, 值 1000 自定義), 設置鏈接超時自動中斷的時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值爲 :  time_out=1000
+
+21. (選) (鍵 request_Auth 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  request_Auth=username:password
+
+22. (選) (鍵 request_Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  request_Cookie=Session_ID=request_Key->username:password
+
 ![]()
 
 ---
