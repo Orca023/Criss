@@ -74,17 +74,23 @@ root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/C
 
 以下是當參數 : interface_Function 取 : http_Server 值時, 可在控制臺命令列傳入的參數 :
 
-13. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
+13. (選) (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1, localhost ] 取其一), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
 
-14. (選) (鍵 host 固定, 值 ::0 自定義, [ ::0, ::1, 0.0.0.0, 127.0.0.1, localhost ] 取其一), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
+14. (選) (鍵 port 固定, 值 10001 自定義), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
 
-15. (選) (鍵 port 固定, 值 10001 自定義), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+15. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
 
-16. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
+16. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 用於傳入創建子進程 ( Sub Process ) 數目, 用於執行數據運算的 Node.js 集群 ( Cluster ) 進程 ( Process ), 即工作進程 ( Worker Process ), 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓多進程集群, 預設值爲 :  number_cluster_Workers=0
 
-17. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 用於傳入創建子進程 ( Sub Process ) 數目, 用於執行數據運算的 Node.js 集群 ( Cluster ) 進程 ( Process ), 即工作進程 ( Worker Process ), 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓多進程集群, 預設值爲 :  number_cluster_Workers=0
+17. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
 
 以下是當參數 : interface_Function 取 : http_Client 值時, 可在控制臺命令列傳入的參數 :
+
+13. (選) (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
+
+14. (選) (鍵 port 固定, 值 10001 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+
+18. (選) (鍵 URL 固定, 值 http://[::1]:10001/index.html 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=http://[::1]:10001/index.html
 
 ![]()
 
