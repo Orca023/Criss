@@ -10,6 +10,62 @@
 
 ---
 
+Operating System :
+
+Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
+
+Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
+
+---
+
+Window-cmd : startServer.bat
+
+使用説明:
+
+微軟視窗系統 ( Windows10 x86_64 )
+
+控制臺命令列 ( cmd ) 運行啓動指令 :
+
+C:\Criss> C:/Windows/System32/cmd.exe C:/Criss/startServer.bat C:/Criss/config.txt
+
+控制臺啓動傳參釋意 :
+
+1. (必), (固定), 微軟視窗作業系統 ( Window10 x86_64 ) 控制臺命令列窗口的二進制可執行檔 ( cmd.exe ) 啓動存儲路徑全名, 作業系統 ( Window10 x86_64 ) 固定存儲在路徑爲 :  C:/Windows/System32/cmd.exe
+
+2. (必), (自定義), 微軟視窗系統 ( Windows10 x86_64 ) 批處理程式代碼脚本 ( .bat ) 檔 ( startServer.bat ) 的存儲路徑全名, 預設值爲 :  C:/Criss/startServer.bat
+
+3. (選) (值 C:/Criss/config.txt 自定義), 配置文檔的保存路徑全名, 預設值爲 :  C:/Criss/config.txt
+
+---
+
+Android-Termux-Ubuntu-bash : startServer.sh
+
+使用説明:
+
+谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
+
+控制臺命令列 ( bash ) 運行啓動指令 :
+
+root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/config.txt executableFile=/bin/julia interpreterFile=-p,4,--project=/home/Criss/jl/ scriptFile=/home/Criss/jl/application.jl configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+
+控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類比 Key=Value 的形式 :
+
+1. (必), (固定), 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 ) 控制臺命令列窗口的二進制可執行檔 ( bash ) 啓動存儲路徑全名, 作業系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 ) 固定存儲在路徑爲 :  /bin/bash
+
+2. (必), (自定義), 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 ) 批處理程式代碼脚本 ( .sh ) 檔 ( startServer.sh ) 的存儲路徑全名, 預設值爲 :  C:/Criss/startServer.sh
+
+3. (選), (鍵 configFile 固定, 值 /home/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=/home/Criss/config.txt
+
+4. (選), (鍵 executableFile 固定, 值 /bin/julia 自定義, 例如 [ /bin/julia, /bin/python3, /bin/node ] 可自定義取其一配置), 用於傳入選擇啓動哪一種程式語言編寫的接口服務, 計算機 ( Computer ) 程式 ( Programming ) 設計 Julia 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Python 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Node.js 語言, 預設值爲 :  executableFile=/bin/julia
+
+5. (選), (鍵 interpreterFile 固定, 值 -p,4,--project=/home/Criss/jl/ 自定義, 且可爲空, 即取 interpreterFile= 的形式, 亦可不傳入該參數), 用於傳入程式設計語言 ( Julia, Python3 Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔, 於作業系統控制臺命令列 ( Operating System Console Command ) 使用指令啓動時傳入的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 批處理程式脚本 startServer.sh 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入程式設計語言 ( Julia, Python3 Node.js ) 解釋器 ( Interpreter ) 的運行環境, 預設值爲 :  interpreterFile=-p,4,--project=/home/Criss/jl/
+
+6. (選), (鍵 scriptFile 固定, 值 /home/Criss/jl/application.jl 自定義, 例如 [ /home/Criss/jl/application.jl, /home/Criss/py/application.py, /home/Criss/js/application.js ] 可自定義取其一配置), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的存儲路徑全名, 預設值爲 :  scriptFile=/home/Criss/jl/application.jl
+
+7. (選), (鍵 configInstructions 固定, 取值自定義, 且可爲空, 即取 configInstructions= 的形式, 亦可不傳入該參數), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 批處理程式脚本 startServer.sh 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行環境, 預設值爲 :  configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+
+---
+
 Node.js : Interface.js, application.js
 
 計算機程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 與作業系統 ( Operating System ) 環境配置釋明 :
@@ -18,23 +74,17 @@ Title: Node.js server v20161211
 
 Explain: Node.js file server, Node.js http server, Node.js http client
 
-Operating system: Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
+Operating System: Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30
 
 Interpreter: node-v20.15.0-x64.msi, node-v20.15.0-x86.msi
 
 Interpreter: node-v20.15.0-linux-x64.tar.gz
 
-Operating system: google-pixel-2 android-11 termux-0.118 ubuntu-22.04-LTS-rootfs arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
+Operating System: Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280
 
 Interpreter: node-v20.15.0-linux-arm64.tar.gz
 
 使用説明:
-
-微軟視窗系統 ( Windows x86_64 )
-
-控制臺命令列 ( cmd ) 運行啓動指令 :
-
-C:\Criss> C:/Criss/NodeJS/nodejs-20.15.0/node.exe C:/Criss/js/application.js configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
 
@@ -42,7 +92,13 @@ C:\Criss> C:/Criss/NodeJS/nodejs-20.15.0/node.exe C:/Criss/js/application.js con
 
 root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=/home/Criss/Intermediary/ monitor_file=C:/home/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
-控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類似 Key=Value 的形式 :
+微軟視窗系統 ( Window10 x86_64 )
+
+控制臺命令列 ( cmd ) 運行啓動指令 :
+
+C:\Criss> C:/Criss/NodeJS/nodejs-20.15.0/node.exe C:/Criss/js/application.js configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=C:/Criss/temp/
+
+控制臺啓動傳參釋意, 各參數之間以一個空格字符分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符連接, 即類比 Key=Value 的形式 :
 
 1. (必), (自定義), 安裝配置的程式設計語言 ( Node.js ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值爲 :  C:/Criss/NodeJS/nodejs-20.15.0/node.exe
 
@@ -50,15 +106,15 @@ root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/C
 
    注意, 因爲「application.js」檔中脚本代碼需要加載引入「Interface.js」檔, 所以需要保持「application.js」檔與「Interface.js」檔在相同目錄下, 不然就需要手動修改「application.js」檔中有關引用「Interface.js」檔的加載路徑代碼, 以確保能正確引入「Interface.js」檔.
 
-3. (暫未做) (選) (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
+3. (暫未做) (選) (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
 
-4. (選) (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
+4. (選) (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
 
 以下是當參數 : interface_Function 取 : file_Monitor 值時, 可在控制臺命令列傳入的參數 :
 
 5. (選) (鍵 is_monitor 固定, 值 false 自定義, [ true, false ] 取其一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值爲 :  is_monitor=false
 
-6. (選) (鍵 delay 固定, 值 20 自定義), 監聽文檔輪詢延遲時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值爲 :  delay=20
+6. (選) (鍵 delay 固定, 值 20 自定義), 用於傳入監聽文檔輪詢延遲時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值爲 :  delay=20
 
 7. (選) (鍵 number_Worker_threads 固定, 值 0 自定義), 用於傳入創建子進程 ( Sub Process ) 數目, 用於執行數據運算的 Node.js 集群 ( Cluster ) 進程 ( Process ), 即工作進程 ( Worker Process ), 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓多進程集群, 預設值爲 :  number_Worker_threads=0
 
@@ -74,31 +130,31 @@ root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/C
 
 以下是當參數 : interface_Function 取 : http_Server 值時, 可在控制臺命令列傳入的參數 :
 
-13. (選) (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1, localhost ] 取其一), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
+13. (選) (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1, localhost ] 取其一), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
 
-14. (選) (鍵 port 固定, 值 10001 自定義), 伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+14. (選) (鍵 port 固定, 值 10001 自定義), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
 
-15. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
+15. (選) (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
 
-16. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 用於傳入創建子進程 ( Sub Process ) 數目, 用於執行數據運算的 Node.js 集群 ( Cluster ) 進程 ( Process ), 即工作進程 ( Worker Process ), 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓多進程集群, 預設值爲 :  number_cluster_Workers=0
+16. (選) (鍵 number_cluster_Workers 固定, 值 0 自定義), 用於傳入創建子進程 ( Sub Process ) 數目, 用於傳入執行數據運算的 Node.js 集群 ( Cluster ) 進程 ( Process ), 即工作進程 ( Worker Process ), 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓多進程集群, 預設值爲 :  number_cluster_Workers=0
 
-17. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
+17. (選) (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 用於傳入伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
 
 以下是當參數 : interface_Function 取 : http_Client 值時, 可在控制臺命令列傳入的參數 :
 
-13. (選) (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
+13. (選) (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
 
-14. (選) (鍵 port 固定, 值 10001 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+14. (選) (鍵 port 固定, 值 10001 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
 
-18. (選) (鍵 URL 固定, 值 http://[::1]:10001/index.html 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=http://[::1]:10001/index.html
+18. (選) (鍵 URL 固定, 值 http://[::1]:10001/index.html 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=http://[::1]:10001/index.html
 
 19. (選) (鍵 method 固定, 值 POST 自定義, 例如 [ POST, GET ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  Method=POST
 
-20. (選) (鍵 time_out 固定, 值 1000 自定義), 設置鏈接超時自動中斷的時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值爲 :  time_out=1000
+20. (選) (鍵 time_out 固定, 值 1000 自定義), 用於傳入設置鏈接超時自動中斷的時長，單位 ( Unit ) 爲毫秒 ( MilliSecond ), 預設值爲 :  time_out=1000
 
-21. (選) (鍵 request_Auth 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  request_Auth=username:password
+21. (選) (鍵 request_Auth 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  request_Auth=username:password
 
-22. (選) (鍵 request_Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  request_Cookie=Session_ID=request_Key->username:password
+22. (選) (鍵 request_Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  request_Cookie=Session_ID=request_Key->username:password
 
 ![]()
 
