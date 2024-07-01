@@ -70,13 +70,13 @@ c2exe.c
 
 程式設計 C 語言, 使用 FILE *fstream = popen("shell Code Script", "r") 函數, 創建子進程 ( Sub Process ), 並在子進程 ( Sub Process ) 運行外部二進制可執行檔 ( .exe ), 功能與批處理檔 startServer.sh 類似.
 
+使用説明:
+
 微軟視窗系統 ( Windows10 x86_64 )
 
 Windows10 x86_64 Compiler :
 
 Minimalist GNU on Windows ( MinGW-w64 ) mingw64-8.1.0-release-posix-seh-rt_v6-rev0
-
-使用説明:
 
 控制臺命令列 ( cmd ) 運行編譯指令 :
 
@@ -95,8 +95,6 @@ C:\Criss> C:/Criss/c2exe.exe configFile=C:/Criss/config.txt executableFile=C:/Cr
 Android-11 Termux-0.118 Ubuntu-22.04 Arm64-aarch64 Compiler :
 
 gcc v9.3.0, g++ v9.3.0
-
-使用説明:
 
 控制臺命令列 ( bash ) 運行編譯指令 :
 
