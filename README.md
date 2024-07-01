@@ -263,19 +263,65 @@ Operating System: Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs
 
 Interpreter: julia-1.10.4-linux-aarch64.tar.gz
 
+注意, 程式代碼脚本 ( Script ) 檔 ( Interface.jl ) 的函數 http_Server, http_Client 使用了 Julia 的第三方擴展模組 HTTP.jl, JSON.jl 所以需事先安裝配置成功這兩個擴展包, 然後加載導入之後, 才能正常運行.
+
+首先在作業系統 ( Operating System ) 控制臺命令列窗口 ( bash, cmd ) 啓動程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 進入語言 ( Julia ) 的運行環境 :
+
+谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 ) 控制臺命令列 ( bash ) 運行啓動指令 :
+
+root@localhost:~# /usr/julia/julia-1.10.4/bin/julia --project=/home/Criss/jl/
+
+微軟視窗系統 ( Window10 x86_64 ) 控制臺命令列 ( cmd ) 運行啓動指令 :
+
+C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe --project=C:/Criss/jl/
+
+然後, 在程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 運行環境下, 安裝配置第三方擴展包 :
+
+程式設計語言 ( Julia ) 的第三方擴展模組 HTTP.jl 安裝配置説明 :
+
+julia> using Pkg
+
+julia> Pkg.add("HTTP")
+
+程式設計語言 ( Julia ) 的第三方擴展模組 HTTP.jl 加載導入説明 :
+
+julia> using HTTP
+
+程式設計語言 ( Julia ) 的第三方擴展模組 JSON.jl 安裝配置説明 :
+
+julia> using Pkg
+
+julia> Pkg.add("JSON")
+
+程式設計語言 ( Julia ) 的第三方擴展模組 JSON.jl 加載導入説明 :
+
+julia> using JSON
+
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) 托管網站官方手冊](https://julialang.org/packages/): 
+https://julialang.org/packages/
+
+[程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
+https://github.com/JuliaRegistries/General.git
+
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 HTTP.jl 的官方 GitHub 網站倉庫](https://github.com/JuliaWeb/HTTP.jl): 
+https://github.com/JuliaWeb/HTTP.jl.git
+
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 JSON.jl 的官方 GitHub 網站倉庫](https://github.com/JuliaIO/JSON.jl): 
+https://github.com/JuliaIO/JSON.jl.git
+
 使用説明:
 
 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /usr/julia/julia-1.10.4/bin/julia -p 4 --project=/home/Criss/jl/ /home/Criss/jl/application.jl configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /usr/julia/julia-1.10.4/bin/julia -p 4 --project=/home/Criss/jl/ /home/Criss/jl/application.jl configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
 微軟視窗系統 ( Window10 x86_64 )
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ C:/Criss/jl/application.jl configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ C:/Criss/jl/application.jl configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -454,22 +500,6 @@ https://github.com/JuliaRegistries/General.git
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Window-cmd : startServer.bat
 
 使用説明:
@@ -593,113 +623,6 @@ https://github.com/niXman/mingw-builds-binaries/releases
 
 [程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
 https://sourceforge.net/projects/mingw-w64/
-
----
-
-
-
-
-
-
-
-
-Compiler:
-
-Minimalist GNU on Windows: mingw64 - 8.1.0 - release - posix - seh - rt_v6 - rev0
-
-Interpreter:
-
-node - v20.15.0
-
-python - 3.12.4
-
-julia - 1.10.4
-
-julia - 1.10.4 - packages:
-
-Artifacts
-
-Base64
-
-BitFlags - 0.1.8
-
-CodecZlib - 0.7.4
-
-ConcurrentUtilities - 2.4.1
-
-Dates
-
-ExceptionUnwrapping - 0.1.10
-
-HTTP - 1.10.8
-
-InteractiveUtils
-
-JLLWrappers - 1.5.0
-
-JSON - 0.21.4
-
-Libdl
-
-Logging
-
-LoggingExtras - 1.0.3
-
-Markdown
-
-MbedTLS - 1.1.9
-
-MbedTLS_jll - 2.28.2+0
-
-Mmap
-
-MozillaCACerts_jll - 2022.10.11
-
-NetworkOptions - 1.2.0
-
-OpenSSL - 1.4.3
-
-OpenSSL_jll - 3.0.13+1
-
-Parsers - 2.8.1
-
-PrecompileTools - 1.2.1
-
-Preferences - 1.4.3
-
-Printf
-
-Random
-
-SHA - 0.7.0
-
-Serialization
-
-SimpleBufferStream - 1.1.0
-
-Sockets
-
-TOML - 1.0.3
-
-Test
-
-TranscodingStreams - 0.10.9
-
-TranscodingStreams.extensions
-
-URIs - 1.5.1
-
-UUIDs
-
-Unicode
-
-Zlib_jll - 1.2.13+0
-
-![]()
-
----
-
-![]()
 
 ---
 
