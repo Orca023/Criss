@@ -68,7 +68,7 @@ root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/co
 
 c2exe.c
 
-程式設計 C 語言, 使用 FILE *fstream = popen("shell Code Script", "r") 函數, 創建子進程 ( Sub Process ), 並在子進程 ( Sub Process ) 運行外部二進制可執行檔 ( .exe ), 功能與批處理檔 startServer.sh 類似.
+程式設計 C 語言, 使用 FILE *fstream = popen("shell Code Script", "r") 函數, 創建子進程 ( Sub Process ), 並在子進程 ( Sub Process ) 運行外部二進制可執行檔 ( julia.exe, python.exe, node.exe ), 功能與批處理檔 startServer.sh 類似.
 
 使用説明:
 
