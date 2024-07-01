@@ -263,7 +263,7 @@ Operating System: Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs
 
 Interpreter: julia-1.10.4-linux-aarch64.tar.gz
 
-注意, 程式代碼脚本 ( Script ) 檔 ( Interface.jl ) 的函數 http_Server, http_Client 使用了 Julia 的第三方擴展模組 HTTP.jl, JSON.jl 所以需事先安裝配置成功這兩個擴展包, 然後加載導入之後, 才能正常運行.
+注意, 程式代碼脚本檔 Interface.jl 裏, 函數 monitor_file_do_Function, read_file_do_Function, do_data 使用了第三方擴展包 JSON.jl 模組, 函數 http_Server, http_Client, do_Request, do_Response 使用了第三方擴展包 HTTP.jl, JSON.jl 模組, 所以, 需事先安裝配置成功, 加載導入之後, 才能正常運行.
 
 首先在作業系統 ( Operating System ) 控制臺命令列窗口 ( bash, cmd ) 啓動程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 進入語言 ( Julia ) 的運行環境 :
 
