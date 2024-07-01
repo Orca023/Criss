@@ -437,23 +437,11 @@ https://github.com/JuliaLang
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫](https://github.com/JuliaLang/julia): 
 https://github.com/JuliaLang/julia.git
 
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) 托管網站官方手冊](https://julialang.org/packages/): 
+https://julialang.org/packages/
+
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
 https://github.com/JuliaRegistries/General.git
-
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 JSON.jl 模組 GitHub 網站倉庫](https://github.com/JuliaIO/JSON.jl.git): 
-https://github.com/JuliaIO/JSON.jl.git
-
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 HTTP.jl 模組 GitHub 網站倉庫](https://github.com/JuliaWeb/HTTP.jl.git): 
-https://github.com/JuliaWeb/HTTP.jl.git
-
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 JSON3.jl 模組 GitHub 網站倉庫](https://github.com/quinnj/JSON3.jl.git): 
-https://github.com/quinnj/JSON3.jl.git
-
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 Plots.jl 模組 GitHub 網站倉庫](https://github.com/JuliaPlots/Plots.jl.git): 
-https://github.com/JuliaPlots/Plots.jl.git
-
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方 LsqFit.jl 模組 GitHub 網站倉庫](https://github.com/JuliaNLSolvers/LsqFit.jl.git): 
-https://github.com/JuliaNLSolvers/LsqFit.jl.git
 
 ---
 
