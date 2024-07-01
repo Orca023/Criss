@@ -183,7 +183,7 @@ C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py co
 
 7. (選), (鍵 number_Worker_process 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_process=0
 
-8. (選), (鍵 is_Monitor_Concurrent 固定, 值 Multi-Threading 自定義, 例如 [ 0, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 取 0 值表示不開啓並發架構, 預設值爲 :  is_Monitor_Concurrent=Multi-Threading
+8. (選), (鍵 is_Monitor_Concurrent 固定, 值 Multi-Threading 自定義, 例如 [ 0, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 取 0 值表示不開啓並發架構, 預設值爲 :  is_Monitor_Concurrent=0
 
 9. (選), (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值爲 :  monitor_dir=C:/Criss/Intermediary/
 
@@ -269,21 +269,21 @@ Interpreter: julia-1.10.4-linux-aarch64.tar.gz
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /usr/bin/python3 /home/Criss/py/application.py configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /usr/julia/julia-1.10.4/bin/julia -p 4 --project=/home/Criss/jl/ /home/Criss/jl/application.jl configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
 微軟視窗系統 ( Window10 x86_64 )
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/Julia/Julia-1.10.4/julia.exe C:/Criss/py/application.py configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ C:/Criss/jl/application.jl configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
-1. (必), (自定義), 安裝配置的程式設計語言 ( Python ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值爲 :  C:/Criss/Julia/Julia-1.10.4/python.exe
+1. (必), (自定義), 安裝配置的程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 環境的二進制可執行檔啓動存儲路徑全名, 預設值爲 :  C:/Criss/Julia/Julia-1.10.4/bin/julia.exe
 
-2. (必), (自定義), 語言 ( Python ) 程式代碼脚本 ( Script ) 檔 ( application.py ) 的存儲路徑全名, 預設值爲 :  C:/Criss/py/application.py
+2. (必), (自定義), 語言 ( Julia ) 程式代碼脚本 ( Script ) 檔 ( application.jl ) 的存儲路徑全名, 預設值爲 :  C:/Criss/jl/application.jl
 
-   注意, 因爲「application.py」檔中脚本代碼需要加載引入「Interface.py」檔, 所以需要保持「application.py」檔與「Interface.py」檔在相同目錄下, 不然就需要手動修改「application.py」檔中有關引用「Interface.py」檔的加載路徑代碼, 以確保能正確引入「Interface.py」檔.
+   注意, 因爲「application.jl」檔中脚本代碼需要加載引入「Interface.jl」檔, 所以需要保持「application.jl」檔與「Interface.jl」檔在相同目錄下, 不然就需要手動修改「application.jl」檔中有關引用「Interface.jl」檔的加載路徑代碼, 以確保能正確引入「Interface.jl」檔.
 
 3. (暫未做), (選), (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
 
@@ -291,53 +291,62 @@ C:\Criss> C:/Criss/Julia/Julia-1.10.4/julia.exe C:/Criss/py/application.py confi
 
 以下是當參數 : interface_Function 取 : file_Monitor 值時, 可在控制臺命令列傳入的參數 :
 
-5. (選), (鍵 is_monitor 固定, 值 False 自定義, [ True, False ] 取其一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值爲 :  is_monitor=False
+5. (選), (鍵 is_monitor 固定, 值 false 自定義, [ true, false ] 取其一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值爲 :  is_monitor=false
 
 6. (選), (鍵 time_sleep 固定, 值 0.02 自定義), 用於傳入監聽文檔輪詢延遲時長，單位 ( Unit ) 爲秒 ( Second ), 預設值爲 :  time_sleep=0.02
 
-7. (選), (鍵 number_Worker_process 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_process=0
+7. (選), (鍵 number_Worker_threads 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_threads=0
 
-8. (選), (鍵 is_Monitor_Concurrent 固定, 值 Multi-Threading 自定義, 例如 [ 0, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 取 0 值表示不開啓並發架構, 預設值爲 :  is_Monitor_Concurrent=Multi-Threading
+8. (選), (鍵 isDoTasksOrThreads 固定, 值 Tasks 自定義, 例如 [ Tasks, Multi-Threading ] 取其一), 用於選擇並發種類, 多缐程 ( Threading ) 並發, 或者, 多協程 ( Tasks ) 並發, 當取值為多缐程 Multi-Threading 時，必須在啓動 Julia 解釋器之前，在控制臺命令行修改環境變量：export JULIA_NUM_THREADS=4(Linux OSX) 或 set JULIA_NUM_THREADS=4(Windows) 來設置預創建多個缐程, 預設值爲 : 
+ isDoTasksOrThreads=Tasks
 
-9. (選), (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值爲 :  monitor_dir=C:/Criss/Intermediary/
+9. (選), (鍵 isMonitorThreadsOrProcesses 固定, 值 Multi-Threading 自定義, 例如 [ 0, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 取 0 值表示不開啓並發架構, 預設值爲 :  isMonitorThreadsOrProcesses=0
 
-10. (選), (鍵 monitor_file 固定, 值 C:/Criss/Intermediary/intermediary_write_C.txt 自定義), 用於接收傳值的媒介文檔 ( 監聽文檔 ) 存儲路徑全名, 預設值爲 :  monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt
+10. (選), (鍵 monitor_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值爲 :  monitor_dir=C:/Criss/Intermediary/
 
-11. (選), (鍵 output_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於輸出運算結果傳值的媒介目錄 ( 運算結果文檔儲存文件夾 ) 存儲路徑全名, 預設值爲 :  output_dir=C:/Criss/Intermediary/
+11. (選), (鍵 monitor_file 固定, 值 C:/Criss/Intermediary/intermediary_write_C.txt 自定義), 用於接收傳值的媒介文檔 ( 監聽文檔 ) 存儲路徑全名, 預設值爲 :  monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt
 
-12. (選), (鍵 output_file 固定, 值 C:/Criss/Intermediary/intermediary_write_Nodejs.txt 自定義), 用於輸出運算結果傳值的媒介文檔 ( 運算結果輸出保存文檔 ) 存儲路徑全名, 預設值爲 :  output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt
+12. (選), (鍵 output_dir 固定, 值 C:/Criss/Intermediary/ 自定義), 用於輸出運算結果傳值的媒介目錄 ( 運算結果文檔儲存文件夾 ) 存儲路徑全名, 預設值爲 :  output_dir=C:/Criss/Intermediary/
 
-13. (選), (鍵 temp_cache_IO_data_dir 固定, 值 C:/Criss/temp/ 自定義), 用於暫存傳入傳出數據的臨時媒介文件夾路徑全名, 預設值爲 :  temp_cache_IO_data_dir=C:/Criss/temp/
+13. (選), (鍵 output_file 固定, 值 C:/Criss/Intermediary/intermediary_write_Nodejs.txt 自定義), 用於輸出運算結果傳值的媒介文檔 ( 運算結果輸出保存文檔 ) 存儲路徑全名, 預設值爲 :  output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt
+
+14. (選), (鍵 temp_cache_IO_data_dir 固定, 值 C:/Criss/temp/ 自定義), 用於暫存傳入傳出數據的臨時媒介文件夾路徑全名, 預設值爲 :  temp_cache_IO_data_dir=C:/Criss/temp/
 
 以下是當參數 : interface_Function 取 : http_Server 值時, 可在控制臺命令列傳入的參數 :
 
-14. (選), (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1 ] 取其一), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
+7. (選), (鍵 number_Worker_threads 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_threads=0
 
-15. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+15. (選), (鍵 host 固定, 值 ::0 自定義, 例如 [ ::0, ::1, 0.0.0.0, 127.0.0.1, localhost ] 取其一), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::0
 
-16. (選), (鍵 Key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  Key=username:password
+16. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入伺服器 ( http_Server ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
 
-17. (選), (鍵 Is_multi_thread 固定, 值 False 自定義, 例如 [ True, False ] 取其一), 用於判斷是否開啓多缐程 ( Threading ) 並發, 預設值爲 :  Is_multi_thread=False
+17. (選), (鍵 key 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入自定義的訪問網站驗證 ( Authorization ) 用戶名和密碼, 預設值爲 :  key=username:password
 
-18. (選), (鍵 number_Worker_process 固定, 值 0 自定義), 用於傳入創建並發數目, 子進程 ( Sub Process ) 並發, 或者, 子缐程 ( Sub Threading ) 並發, 即, 可以設爲等於物理中央處理器 ( Central Processing Unit ) 的數目, 取 0 值表示不開啓並發架構, 預設值爲 :  number_Worker_process=0
+18. (選), (鍵 isConcurrencyHierarchy 固定, 值 Tasks 自定義, 例如 [ Tasks, Multi-Threading, Multi-Processes ] 取其一), 用於選擇並發種類, 多進程 ( Process ) 並發, 或者, 多缐程 ( Threading ) 並發, 或者, 多協程 ( Tasks ) 並發, 當取值為多缐程 Multi-Threading 時，必須在啓動 Julia 解釋器之前，在控制臺命令行修改環境變量：export JULIA_NUM_THREADS=4(Linux OSX) 或 set JULIA_NUM_THREADS=4(Windows) 來設置預創建多個缐程, 預設值爲 :  isConcurrencyHierarchy=Tasks
 
 19. (選), (鍵 webPath 固定, 值 C:/Criss/html/ 自定義), 用於傳入伺服器 ( http_Server ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  webPath=C:/Criss/html/
 
+20. (選), (鍵 readtimeout 固定, 值 0 自定義), 用於傳入客戶端請求數據讀取超時中止時長，單位 ( Unit ) 爲秒 ( Second ), 取 0 值表示不做判斷是否超時, 預設值爲 :  readtimeout=0
+
 以下是當參數 : interface_Function 取 : http_Client 值時, 可在控制臺命令列傳入的參數 :
 
-14. (選), (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
+15. (選), (鍵 host 固定, 值 ::1 自定義, 例如 [ ::1, 127.0.0.1, localhost ] 取其一), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  host=::1
 
-15. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
+16. (選), (鍵 port 固定, 值 10001 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  port=10001
 
-20. (選), (鍵 URL 固定, 值 / 自定義, 例如配置爲 http://[::1]:10001/index.html 值), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=/
+21. (選), (鍵 URL 固定, 取值自定義, 例如配置爲 http://[::1]:10001/index.html 值), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  URL=""
 
-21. (選), (鍵 Method 固定, 值 POST 自定義, 例如 [ POST, GET ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  Method=POST
+22. (選), (鍵 proxy 固定, 取值自定義, 例如配置爲 http://[::1]:10001/index.html 值), 當用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求時, 若需要代理轉發, 用於傳入轉發代理服務器的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  proxy=""
 
-22. (選), (鍵 time_out 固定, 值 0.5 自定義), 用於傳入設置鏈接超時自動中斷的時長，單位 ( Unit ) 爲秒 ( Second ), 預設值爲 :  time_out=0.5
+23. (選), (鍵 requestMethod 固定, 值 POST 自定義, 例如 [ POST, GET ] 取其一), 用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  requestMethod=POST
 
-23. (選), (鍵 request_Auth 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  request_Auth=username:password
+20. (選), (鍵 readtimeout 固定, 值 0 自定義), 用於傳入服務端響應數據讀取超時中止時長，單位 ( Unit ) 爲秒 ( Second ), 取 0 值表示不做判斷是否超時, 預設值爲 :  readtimeout=0
 
-24. (選), (鍵 request_Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  request_Cookie=Session_ID=request_Key->username:password
+24. (選), (鍵 connecttimeout 固定, 值 0 自定義), 用於傳入客戶端請求鏈接超時中止時長，單位 ( Unit ) 爲秒 ( Second ), 取 0 值表示不做判斷是否超時, 預設值爲 :  connecttimeout=0
+
+25. (選), (鍵 Authorization 固定, 賬號密碼連接符 : 固定, 值 username 和 password 自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( Authorization ) 的賬號密碼字符串, 預設值爲 :  Authorization=username:password
+
+26. (選), (鍵 Cookie 固定, 其中 Cookie 名稱 Session_ID 可以設計爲固定, Cookie 值 request_Key->username:password 可以設計爲自定義), 用於傳入用戶端連接器 ( http_Client ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  Cookie=Session_ID=request_Key->username:password
 
 ![]()
 
