@@ -522,7 +522,7 @@ C:\Criss> C:/Windows/System32/cmd.exe C:/Criss/startServer.bat C:/Criss/config.t
 
 2. (必), (自定義), 微軟視窗系統 ( Windows10 x86_64 ) 批處理程式代碼脚本 ( .bat ) 檔 ( startServer.bat ) 的存儲路徑全名, 預設值爲 :  C:/Criss/startServer.bat
 
-3. (選) (值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  C:/Criss/config.txt
+3. (選) (值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 配置文檔裏的橫向列首可用一個井號字符 ( # ) 注釋掉, 使用井號字符 ( # ) 注釋掉之後，該橫向列的參數即不會傳入從而失效, 若需啓用可刪除橫向列首的井號字符 ( # ) 即可, 注意橫向列首的空格也要刪除, 每一個橫向列的參數必須頂格書寫, 預設值爲 :  C:/Criss/config.txt
 
 ---
 
@@ -542,7 +542,7 @@ root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/co
 
 2. (必), (自定義), 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 ) 批處理程式代碼脚本 ( .sh ) 檔 ( startServer.sh ) 的存儲路徑全名, 預設值爲 :  C:/Criss/startServer.sh
 
-3. (選), (鍵 configFile 固定, 值 /home/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=/home/Criss/config.txt
+3. (選), (鍵 configFile 固定, 值 /home/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 配置文檔裏的橫向列首可用一個井號字符 ( # ) 注釋掉, 使用井號字符 ( # ) 注釋掉之後，該橫向列的參數即不會傳入從而失效, 若需啓用可刪除橫向列首的井號字符 ( # ) 即可, 注意橫向列首的空格也要刪除, 每一個橫向列的參數必須頂格書寫, 預設值爲 :  configFile=/home/Criss/config.txt
 
 4. (選), (鍵 executableFile 固定, 值 /bin/julia 自定義, 例如 [ /bin/julia, /bin/python3, /bin/node ] 可自定義取其一配置), 用於傳入選擇啓動哪一種程式語言編寫的接口服務, 計算機 ( Computer ) 程式 ( Programming ) 設計 Julia 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Python 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Node.js 語言, 預設值爲 :  executableFile=/bin/julia
 
@@ -596,7 +596,7 @@ root@localhost:~# /home/Criss/c2exe.exe configFile=/home/Criss/config.txt execut
 
 1. (必), (自定義), 計算機 C 語言 ( Computer Programming C Language ) 程式設計 ( Programming ) 代碼檔 ( c2exe.c ), 使用編譯器 ( Compiler ), 經過編譯之後, 轉換爲二進制可執行檔 ( .exe ), 啓動運行指令存儲路徑全名, 例如可自定義配置爲 :  C:/Criss/c2exe.exe
 
-2. (選) (值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  C:/Criss/config.txt
+2. (選) (值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 配置文檔裏的橫向列首可用一個井號字符 ( # ) 注釋掉, 使用井號字符 ( # ) 注釋掉之後，該橫向列的參數即不會傳入從而失效, 若需啓用可刪除橫向列首的井號字符 ( # ) 即可, 注意橫向列首的空格也要刪除, 每一個橫向列的參數必須頂格書寫, 預設值爲 :  C:/Criss/config.txt
 
 3. (選), (鍵 executableFile 固定, 值 /bin/julia 自定義, 例如 [ /bin/julia, /bin/python3, /bin/node ] 可自定義取其一配置), 用於傳入選擇啓動哪一種程式語言編寫的接口服務, 計算機 ( Computer ) 程式 ( Programming ) 設計 Julia 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Python 語言, 計算機 ( Computer ) 程式 ( Programming ) 設計 Node.js 語言, 預設值爲 :  executableFile=/bin/julia
 
