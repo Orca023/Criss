@@ -265,9 +265,9 @@ Interpreter: julia-1.10.4-linux-aarch64.tar.gz
 
 注意,
 
-程式代碼脚本檔 Interface.jl 裏, 函數 http_Server, http_Client 使用了第三方擴展包 HTTP.jl , JSON.jl 模組,
+程式代碼脚本檔 Interface.jl 裏, 函數 http_Server, http_Client 使用了第三方模組 HTTP.jl , JSON.jl 擴展包 ( packages ),
 
-程式代碼脚本檔 application.jl 裏, 函數 do_data, do_Request, do_Response 使用了第三方擴展包 JSON.jl 模組,
+程式代碼脚本檔 application.jl 裏, 函數 do_data, do_Request, do_Response 使用了第三方模組 JSON.jl 擴展包 ( packages ),
 
 所以, 需事先安裝配置成功, 加載導入之後, 才能正常運行.
 
@@ -281,7 +281,7 @@ root@localhost:~# /usr/julia/julia-1.10.4/bin/julia --project=/home/Criss/jl/
 
 C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe --project=C:/Criss/jl/
 
-然後, 在程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 運行環境下, 安裝配置第三方擴展包 :
+然後, 在程式設計語言 ( Julia ) 解釋器 ( Interpreter ) 運行環境下, 安裝配置第三方擴展包 ( packages ) :
 
 程式設計語言 ( Julia ) 的第三方擴展模組 HTTP.jl 安裝配置説明 :
 
@@ -303,7 +303,7 @@ julia> Pkg.add("JSON")
 
 julia> using JSON
 
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) 托管網站官方手冊](https://julialang.org/packages/): 
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) ( packages ) 托管網站官方手冊](https://julialang.org/packages/): 
 https://julialang.org/packages/
 
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
@@ -406,7 +406,7 @@ Interpreter:
 
 julia - 1.10.4
 
-julia - 1.10.4 - packages:
+julia - 1.10.4 - packages :
 
 Artifacts
 
@@ -498,7 +498,7 @@ https://github.com/JuliaLang
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 GitHub 網站倉庫](https://github.com/JuliaLang/julia): 
 https://github.com/JuliaLang/julia.git
 
-[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) 托管網站官方手冊](https://julialang.org/packages/): 
+[程式設計 Julia 語言解釋器 ( Interpreter ) 第三方擴展模組 ( module ) ( packages ) 托管網站官方手冊](https://julialang.org/packages/): 
 https://julialang.org/packages/
 
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
@@ -632,7 +632,7 @@ https://sourceforge.net/projects/mingw-w64/
 
 ---
 
-編譯器 ( Compiler ) , 解釋器 ( Interpreter ) 依賴工具 ( packages ) [百度網盤 pan.baidu.com](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k) 下載頁: 
+編譯器 ( Compiler ) , 解釋器 ( Interpreter ) 工具 [百度網盤(pan.baidu.com)](https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k) 下載頁: 
 https://pan.baidu.com/s/1Dtp1PEcFBAnjrzareMtjNg?pwd=me5k
 
 提取碼：me5k
