@@ -110,7 +110,7 @@ C:\Criss> C:/Criss/NodeJS/Nodejs-20.15.0/node.exe C:/Criss/js/application.js con
 
 ![]()
 
-Interpreter:
+Interpreter :
 
 node - v20.15.0
 
@@ -227,7 +227,7 @@ C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py co
 
 ![]()
 
-Interpreter:
+Interpreter :
 
 python - 3.12.4
 
@@ -402,7 +402,7 @@ C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ 
 
 ![]()
 
-Interpreter:
+Interpreter :
 
 julia - 1.10.4
 
@@ -608,7 +608,7 @@ root@localhost:~# /home/Criss/c2exe.exe configFile=/home/Criss/config.txt execut
 
 ![]()
 
-Compiler:
+Compiler :
 
 Minimalist GNU on Windows ( MinGW-w64 ) :  mingw64-8.1.0-release-posix-seh-rt_v6-rev0
 
