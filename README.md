@@ -408,83 +408,83 @@ julia - 1.10.4
 
 julia - 1.10.4 - packages :
 
-Artifacts
+&nbsp;&nbsp;&nbsp;&nbsp;Artifacts
 
-Base64
+&nbsp;&nbsp;&nbsp;&nbsp;Base64
 
-BitFlags - 0.1.8
+&nbsp;&nbsp;&nbsp;&nbsp;BitFlags - 0.1.8
 
-CodecZlib - 0.7.4
+&nbsp;&nbsp;&nbsp;&nbsp;CodecZlib - 0.7.4
 
-ConcurrentUtilities - 2.4.1
+&nbsp;&nbsp;&nbsp;&nbsp;ConcurrentUtilities - 2.4.1
 
-Dates
+&nbsp;&nbsp;&nbsp;&nbsp;Dates
 
-ExceptionUnwrapping - 0.1.10
+&nbsp;&nbsp;&nbsp;&nbsp;ExceptionUnwrapping - 0.1.10
 
-HTTP - 1.10.8
+&nbsp;&nbsp;&nbsp;&nbsp;HTTP - 1.10.8
 
-InteractiveUtils
+&nbsp;&nbsp;&nbsp;&nbsp;InteractiveUtils
 
-JLLWrappers - 1.5.0
+&nbsp;&nbsp;&nbsp;&nbsp;JLLWrappers - 1.5.0
 
-JSON - 0.21.4
+&nbsp;&nbsp;&nbsp;&nbsp;JSON - 0.21.4
 
-Libdl
+&nbsp;&nbsp;&nbsp;&nbsp;Libdl
 
-Logging
+&nbsp;&nbsp;&nbsp;&nbsp;Logging
 
-LoggingExtras - 1.0.3
+&nbsp;&nbsp;&nbsp;&nbsp;LoggingExtras - 1.0.3
 
-Markdown
+&nbsp;&nbsp;&nbsp;&nbsp;Markdown
 
-MbedTLS - 1.1.9
+&nbsp;&nbsp;&nbsp;&nbsp;MbedTLS - 1.1.9
 
-MbedTLS_jll - 2.28.2+0
+&nbsp;&nbsp;&nbsp;&nbsp;MbedTLS_jll - 2.28.2+0
 
-Mmap
+&nbsp;&nbsp;&nbsp;&nbsp;Mmap
 
-MozillaCACerts_jll - 2022.10.11
+&nbsp;&nbsp;&nbsp;&nbsp;MozillaCACerts_jll - 2022.10.11
 
-NetworkOptions - 1.2.0
+&nbsp;&nbsp;&nbsp;&nbsp;NetworkOptions - 1.2.0
 
-OpenSSL - 1.4.3
+&nbsp;&nbsp;&nbsp;&nbsp;OpenSSL - 1.4.3
 
-OpenSSL_jll - 3.0.13+1
+&nbsp;&nbsp;&nbsp;&nbsp;OpenSSL_jll - 3.0.13+1
 
-Parsers - 2.8.1
+&nbsp;&nbsp;&nbsp;&nbsp;Parsers - 2.8.1
 
-PrecompileTools - 1.2.1
+&nbsp;&nbsp;&nbsp;&nbsp;PrecompileTools - 1.2.1
 
-Preferences - 1.4.3
+&nbsp;&nbsp;&nbsp;&nbsp;Preferences - 1.4.3
 
-Printf
+&nbsp;&nbsp;&nbsp;&nbsp;Printf
 
-Random
+&nbsp;&nbsp;&nbsp;&nbsp;Random
 
-SHA - 0.7.0
+&nbsp;&nbsp;&nbsp;&nbsp;SHA - 0.7.0
 
-Serialization
+&nbsp;&nbsp;&nbsp;&nbsp;Serialization
 
-SimpleBufferStream - 1.1.0
+&nbsp;&nbsp;&nbsp;&nbsp;SimpleBufferStream - 1.1.0
 
-Sockets
+&nbsp;&nbsp;&nbsp;&nbsp;Sockets
 
-TOML - 1.0.3
+&nbsp;&nbsp;&nbsp;&nbsp;TOML - 1.0.3
 
-Test
+&nbsp;&nbsp;&nbsp;&nbsp;Test
 
-TranscodingStreams - 0.10.9
+&nbsp;&nbsp;&nbsp;&nbsp;TranscodingStreams - 0.10.9
 
-TranscodingStreams.extensions
+&nbsp;&nbsp;&nbsp;&nbsp;TranscodingStreams.extensions
 
-URIs - 1.5.1
+&nbsp;&nbsp;&nbsp;&nbsp;URIs - 1.5.1
 
-UUIDs
+&nbsp;&nbsp;&nbsp;&nbsp;UUIDs
 
-Unicode
+&nbsp;&nbsp;&nbsp;&nbsp;Unicode
 
-Zlib_jll - 1.2.13+0
+&nbsp;&nbsp;&nbsp;&nbsp;Zlib_jll - 1.2.13+0
 
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方網站](https://julialang.org/): 
 https://julialang.org/
