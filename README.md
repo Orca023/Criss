@@ -20,9 +20,11 @@
 
 其中, 檔 application 裏的 : do_data 函數 ( Function ) 是執行文檔 ( file ) 監聽伺服器 ( file_Monitor ) 讀入的數據分發路由功能.
 
-其中, 檔 application 裏的 : do_Request 函數 ( Function ) 是執行網路 ( web ) 伺服器 ( http_Server ) 讀入的數據分發路由功能.
+其中, 檔 application 裏的 : do_Request 函數 ( Function ) 是執行網路 ( web ) 伺服器 ( http_Server ) 讀入的從用戶端 ( http_Client ) 發送的請求 ( Request ) 數據的分發路由功能.
 
-可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) , 以用於執行讀入數據具體的運算處理功能並返回處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入數據具體的運算處理功能並返回處理結果.
+其中, 檔 application 裏的 : do_Response 函數 ( Function ) 是執行網路 ( web ) 用戶端鏈接器 ( http_Client ) 接收的從伺服器 ( http_Server ) 回饋的響應 ( Response ) 數據 ( 運算處理結果 ) 的分發路由功能.
+
+可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) 用以執行讀入數據具體的運算處理功能並返回處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入數據具體的運算處理功能並返回處理結果.
 
 ---
 
