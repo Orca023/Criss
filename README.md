@@ -12,11 +12,11 @@
 
 一. Interface :
 
-代碼脚本 ( Script ) 檔 : Interface 是伺服器 ( Server ) 函數 ( Function ) , 具體功能是實現: 讀入數據, 寫出結果.
+代碼脚本 ( Script ) 檔 : Interface 是伺服器 ( Server ) 函數 ( Function ) , 具體功能是實現: 讀入 ( read ) 數據, 寫出 ( write ) 結果.
 
 二. application
 
-代碼脚本 ( Script ) 檔 : application 引用檔 Interface 裏的伺服器 ( Server ) 函數 ( Function ) 讀入待處理的原始數據, 然後, 實現數據分發路由 ( Router ) 功能, 可通過修改檔 application 裏的 : do_data 和 do_Request 兩個函數 ( Function ) , 實現自定義規則的數據分發運算處理, 然後再將運算結果, 通過引用檔 Interface 裏的伺服器 ( Server ) 函數 ( Function ) 寫出.
+代碼脚本 ( Script ) 檔 : application 引用 ( Import ) 檔 Interface 裏的伺服器 ( Server ) 讀入 ( read ) 待處理的原始數據, 然後, 實現數據分發路由 ( Router ) 功能, 可通過修改檔 application 裏的 : do_data 和 do_Request 兩個函數 ( Function ) , 實現自定義規則的數據分發運算處理並返回 ( return ) 運算結果, 然後再將運算結果, 通過引用 ( Import ) 檔 Interface 裏的伺服器 ( Server ) 回饋寫出 ( write ) 結果.
 
 其中, 檔 application 裏的 : do_data 函數 ( Function ) 是執行文檔 ( file ) 監聽伺服器 ( file_Monitor ) 讀入的數據分發路由 ( Router ) 功能.
 
@@ -24,7 +24,7 @@
 
 其中, 檔 application 裏的 : do_Response 函數 ( Function ) 是執行網路 ( web ) 用戶端鏈接器 ( http_Client ) 接收到從伺服器 ( http_Server ) 回饋的響應 ( Response ) 數據 ( 運算處理結果 ) 的分發路由 ( Router ) 功能.
 
-可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) 用以執行讀入數據具體的運算處理功能並返回處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入數據具體的運算處理功能並返回處理結果.
+可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) 用以執行讀入 ( read ) 數據具體的運算處理 ( calculator ) 功能並返回 ( return ) 處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用 ( Import ) 新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入 ( read ) 數據具體的運算處理 ( calculator ) 功能並返回 ( return ) 處理結果.
 
 ---
 
