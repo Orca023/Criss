@@ -1,4 +1,4 @@
-## 阡陌交通 Criss, Interface
+## 阡陌交通 Criss, Interface, application
 #### Node.js, Julia, Python, C
 #### 混合編程 ( Hybrid Programming ), 程式設計語言 ( Computer Programming Language ) 之間, 使用外設硬盤 ( Hard Disk ) 或網卡 ( Network Interface Card ) 作橋, 跨語言 ( Cross Language ) 的數據交換 ( Information exchange pattern ), 就像十字路口一樣的阡陌交通.
 ---
@@ -7,6 +7,22 @@
 
 二. 使用外設網卡 ( Network Interface Card ) 作橋, 創建監聽伺服器 ( http_Server ), 創建用戶端鏈接器 ( http_Client ), 伺服器 ( http_Server ) 監聽指定網卡 ( Network Interface Card ) 的自定義的埠 ( Port ), 從指定的埠號讀取用戶端 ( http_Client ) 發送的請求數據 ( required ), 經過運算 ( Data Processing ), 將運算結果 ( Response ) 回饋至對應發送請求的用戶端 ( http_Client ), 從而完成一次跨語言 ( Cross Language ) 的數據交換 ( Information exchange ).
 </p>
+
+---
+
+一. Interface :
+
+代碼脚本 ( Script ) 檔 : Interface 是伺服器 ( Server ) 函數 ( Function ) , 具體功能是實現: 讀入數據, 寫出結果.
+
+二. application
+
+代碼脚本 ( Script ) 檔 : application 引用檔 Interface 裏的伺服器 ( Server ) 函數 ( Function ) 讀入待處理的原始數據, 然後, 實現數據分發路由功能, 可通過修改檔 application 裏的 : do_data 和 do_Request 兩個函數 ( Function ) , 實現自定義規則的數據分發運算處理, 然後再將運算結果, 通過引用檔 Interface 裏的伺服器 ( Server ) 函數 ( Function ) 寫出.
+
+其中, 檔 application 裏的 : do_data 函數 ( Function ) 是執行文檔 ( file ) 監聽伺服器 ( file_Monitor ) 讀入的數據分發路由功能.
+
+其中, 檔 application 裏的 : do_Request 函數 ( Function ) 是執行網路 ( web ) 伺服器 ( http_Server ) 讀入的數據分發路由功能.
+
+可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) , 以用於執行讀入數據具體的運算處理功能並返回處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入數據具體的運算處理功能並返回處理結果.
 
 ---
 
