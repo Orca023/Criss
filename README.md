@@ -26,6 +26,8 @@
 
 可在檔 application 裏創建, 自定義運算規則的函數 ( Function ) 用以執行讀入 ( read ) 數據具體的運算處理 ( calculator ) 功能並返回 ( return ) 處理結果, 也可以在檔 application 之外增設新的代碼脚本 ( Script ) 檔, 在新的代碼脚本 ( Script ) 檔裏創建自定義運算規則的函數 ( Function ) 並返回處理結果, 然後再由檔 application 引用 ( Import ) 新增設的代碼脚本 ( Script ) 檔裏的函數 ( Function ) 以實現讀入 ( read ) 數據具體的運算處理 ( calculator ) 功能並返回 ( return ) 處理結果.
 
+![]()
+
 ---
 
 Operating System :
