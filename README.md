@@ -1,4 +1,4 @@
-## 阡陌交通 Criss, Interface, application
+## 阡陌交通 Criss : Interface, application
 #### Node.js, Julia, Python, C
 #### 混合編程 ( Hybrid Programming ), 程式設計語言 ( Computer Programming Language ) 之間, 使用外設硬盤 ( Hard Disk ) 或網卡 ( Network Interface Card ) 作橋, 跨語言 ( Cross Language ) 的數據交換 ( Information exchange pattern ), 就像十字路口一樣的阡陌交通.
 ---
