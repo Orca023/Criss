@@ -1,0 +1,55 @@
+# configFile=/data/data/com.termux/files/home/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+# interface_Function=http_Server
+# webPath=/data/data/com.termux/files/home/StatisticalServer/html/
+# host=::0
+# port=10001
+# Key=username:password
+# Is_multi_thread=False
+# number_Worker_process=0
+# is_Monitor_Concurrent=0
+# is_monitor=False
+# time_sleep=0.02
+# monitor_dir=/data/data/com.termux/files/home/StatisticalServer/Intermediary/
+# monitor_file=/data/data/com.termux/files/home/StatisticalServer/Intermediary/intermediary_write_C.txt
+# output_dir=/data/data/com.termux/files/home/StatisticalServer/Intermediary/
+# output_file=/data/data/com.termux/files/home/StatisticalServer/Intermediary/intermediary_write_Python.txt
+# temp_cache_IO_data_dir=/data/data/com.termux/files/home/StatisticalServer/temp/
+
+
+# configFile=/home/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+interface_Function=http_Server
+webPath=/home/StatisticalServer/html/
+host=::0
+port=10001
+Key=username:password
+Is_multi_thread=False
+number_Worker_process=0
+is_Monitor_Concurrent=0
+is_monitor=False
+time_sleep=0.02
+monitor_dir=/home/StatisticalServer/Intermediary/
+monitor_file=/home/StatisticalServer/Intermediary/intermediary_write_C.txt
+output_dir=/home/StatisticalServer/Intermediary/
+output_file=/home/StatisticalServer/Intermediary/intermediary_write_Python.txt
+temp_cache_IO_data_dir=/home/StatisticalServer/temp/
+
+
+# configFile=C:/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+# interface_Function=http_Server
+# webPath=C:/StatisticalServer/html/
+# host=::0
+# port=10001
+# Key=username:password
+# Is_multi_thread=False
+# number_Worker_process=0
+# is_Monitor_Concurrent=0
+# is_monitor=False
+# time_sleep=0.02
+# monitor_dir=C:/StatisticalServer/Intermediary/
+# monitor_file=C:/StatisticalServer/Intermediary/intermediary_write_C.txt
+# output_dir=C:/StatisticalServer/Intermediary/
+# output_file=C:/StatisticalServer/Intermediary/intermediary_write_Python.txt
+# temp_cache_IO_data_dir=C:/StatisticalServer/temp/
