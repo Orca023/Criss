@@ -1,0 +1,52 @@
+# configFile=/data/data/com.termux/files/home/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+# interface_Function=http_Server
+# webPath=/data/data/com.termux/files/home/StatisticalServer/html/
+# host=::0
+# port=10001
+# key=username:password
+# number_Worker_threads=1
+# isConcurrencyHierarchy=Tasks
+# is_monitor=false
+# time_sleep=0.02
+# monitor_dir=/data/data/com.termux/files/home/StatisticalServer/Intermediary/
+# monitor_file=/data/data/com.termux/files/home/StatisticalServer/Intermediary/intermediary_write_C.txt
+# output_dir=/data/data/com.termux/files/home/StatisticalServer/Intermediary/
+# output_file=/data/data/com.termux/files/home/StatisticalServer/Intermediary/intermediary_write_Julia.txt
+# temp_cache_IO_data_dir=/data/data/com.termux/files/home/StatisticalServer/temp/
+
+
+# configFile=/home/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+interface_Function=http_Server
+webPath=/home/StatisticalServer/html/
+host=::0
+port=10001
+key=username:password
+number_Worker_threads=1
+isConcurrencyHierarchy=Tasks
+is_monitor=false
+time_sleep=0.02
+monitor_dir=/home/StatisticalServer/Intermediary/
+monitor_file=/home/StatisticalServer/Intermediary/intermediary_write_C.txt
+output_dir=/home/StatisticalServer/Intermediary/
+output_file=/home/StatisticalServer/Intermediary/intermediary_write_Julia.txt
+temp_cache_IO_data_dir=/home/StatisticalServer/temp/
+
+
+# configFile=C:/StatisticalServer/StatisticalServerJavaScript/config.txt
+
+# interface_Function=http_Server
+# webPath=C:/StatisticalServer/html/
+# host=::0
+# port=10001
+# key=username:password
+# number_Worker_threads=1
+# isConcurrencyHierarchy=Tasks
+# is_monitor=false
+# time_sleep=0.02
+# monitor_dir=C:/StatisticalServer/Intermediary/
+# monitor_file=C:/StatisticalServer/Intermediary/intermediary_write_C.txt
+# output_dir=C:/StatisticalServer/Intermediary/
+# output_file=C:/StatisticalServer/Intermediary/intermediary_write_Julia.txt
+# temp_cache_IO_data_dir=C:/StatisticalServer/temp/
