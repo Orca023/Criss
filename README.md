@@ -64,13 +64,13 @@ Interpreter: node-v20.15.0-linux-arm64.tar.gz
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=/home/Criss/Intermediary/ monitor_file=C:/home/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /usr/bin/node /home/Criss/js/application.js configFile=/home/Criss/js/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=/home/Criss/Intermediary/ monitor_file=C:/home/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
 微軟視窗系統 ( Window10 x86_64 )
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/NodeJS/Nodejs-20.15.0/node.exe C:/Criss/js/application.js configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/NodeJS/Nodejs-20.15.0/node.exe C:/Criss/js/application.js configFile=C:/Criss/js/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password number_cluster_Workers=0 is_monitor=false delay=20 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -80,7 +80,7 @@ C:\Criss> C:/Criss/NodeJS/Nodejs-20.15.0/node.exe C:/Criss/js/application.js con
 
    注意, 因爲「application.js」檔中脚本代碼需要加載引入「Interface.js」檔, 所以需要保持「application.js」檔與「Interface.js」檔在相同目錄下, 不然就需要手動修改「application.js」檔中有關引用「Interface.js」檔的加載路徑代碼, 以確保能正確引入「Interface.js」檔.
 
-3. (暫未做), (選), (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
+3. (選), (鍵 configFile 固定, 值 C:/Criss/js/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/js/config.txt
 
 4. (選), (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
 
@@ -177,13 +177,13 @@ Interpreter: Python-3.12.4-tar.xz
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /usr/bin/python3 /home/Criss/py/application.py configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /usr/bin/python3 /home/Criss/py/application.py configFile=/home/Criss/py/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
 微軟視窗系統 ( Window10 x86_64 )
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py configFile=C:/Criss/py/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 Key=username:password Is_multi_thread=False number_Worker_process=0 is_Monitor_Concurrent=Multi-Threading is_monitor=False time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Python.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -193,7 +193,7 @@ C:\Criss> C:/Criss/Python/Python-3.12.4/python.exe C:/Criss/py/application.py co
 
    注意, 因爲「application.py」檔中脚本代碼需要加載引入「Interface.py」檔, 所以需要保持「application.py」檔與「Interface.py」檔在相同目錄下, 不然就需要手動修改「application.py」檔中有關引用「Interface.py」檔的加載路徑代碼, 以確保能正確引入「Interface.py」檔.
 
-3. (暫未做), (選), (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
+3. (選), (鍵 configFile 固定, 值 C:/Criss/py/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/py/config.txt
 
 4. (選), (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
 
@@ -343,13 +343,13 @@ https://github.com/JuliaIO/JSON.jl.git
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /usr/julia/julia-1.10.4/bin/julia -p 4 --project=/home/Criss/jl/ /home/Criss/jl/application.jl configFile=/home/Criss/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /usr/julia/julia-1.10.4/bin/julia -p 4 --project=/home/Criss/jl/ /home/Criss/jl/application.jl configFile=/home/Criss/jl/config.txt interface_Function=file_Monitor webPath=/home/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=/home/Criss/temp/
 
 微軟視窗系統 ( Window10 x86_64 )
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ C:/Criss/jl/application.jl configFile=C:/Criss/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ C:/Criss/jl/application.jl configFile=C:/Criss/jl/config.txt interface_Function=file_Monitor webPath=C:/Criss/html/ host=::0 port=10001 key=username:password number_Worker_threads=1 isConcurrencyHierarchy=Tasks readtimeout=0 connecttimeout=0 is_monitor=false isDoTasksOrThreads=Tasks isMonitorThreadsOrProcesses=0 time_sleep=0.02 monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt temp_cache_IO_data_dir=C:/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( SPACE ) ( 00100000 ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -359,7 +359,7 @@ C:\Criss> C:/Criss/Julia/Julia-1.10.4/bin/julia.exe -p 4 --project=C:/Criss/jl/ 
 
    注意, 因爲「application.jl」檔中脚本代碼需要加載引入「Interface.jl」檔, 所以需要保持「application.jl」檔與「Interface.jl」檔在相同目錄下, 不然就需要手動修改「application.jl」檔中有關引用「Interface.jl」檔的加載路徑代碼, 以確保能正確引入「Interface.jl」檔.
 
-3. (暫未做), (選), (鍵 configFile 固定, 值 C:/Criss/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/config.txt
+3. (選), (鍵 configFile 固定, 值 C:/Criss/jl/config.txt 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  configFile=C:/Criss/jl/config.txt
 
 4. (選), (鍵 interface_Function 固定, 值 file_Monitor 自定義, [ file_Monitor, http_Server, http_Client ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  interface_Function=file_Monitor
 
@@ -556,7 +556,7 @@ Android-Termux-Ubuntu-bash : startServer.sh
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/config.txt executableFile=/bin/julia interpreterFile=-p,4,--project=/home/Criss/jl/ scriptFile=/home/Criss/jl/application.jl configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/config.txt executableFile=/bin/julia interpreterFile=-p,4,--project=/home/Criss/jl/ scriptFile=/home/Criss/jl/application.jl configInstructions=configFile=/home/Criss/jl/config.txt,interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個逗號字符 ( , ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -572,7 +572,7 @@ root@localhost:~# /bin/bash /home/Criss/startServer.sh configFile=/home/Criss/co
 
 6. (選), (鍵 scriptFile 固定, 值 /home/Criss/jl/application.jl 自定義, 例如 [ /home/Criss/jl/application.jl, /home/Criss/py/application.py, /home/Criss/js/application.js ] 可自定義取其一配置), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的存儲路徑全名, 預設值爲 :  scriptFile=/home/Criss/jl/application.jl
 
-7. (選), (鍵 configInstructions 固定, 取值自定義, 且可爲空, 即取 configInstructions= 的形式, 亦可不傳入該參數), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 批處理程式脚本 startServer.sh 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行環境, 預設值爲 :  configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+7. (選), (鍵 configInstructions 固定, 取值自定義, 且可爲空, 即取 configInstructions= 的形式, 亦可不傳入該參數), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 批處理程式脚本 startServer.sh 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行環境, 預設值爲 :  configInstructions=configFile=/home/Criss/jl/config.txt,interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
 
 ---
 
@@ -598,7 +598,7 @@ C:\Criss> chcp 65001
 
 控制臺命令列 ( cmd ) 運行啓動指令 :
 
-C:\Criss> C:/Criss/c2exe.exe configFile=C:/Criss/config.txt executableFile=C:/Criss/Julia/Julia-1.10.4/julia.exe interpreterFile=-p,4,--project=C:/Criss/jl/ scriptFile=C:/Criss/jl/application.jl configInstructions=interface_Function=file_Monitor,webPath=C:/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=C:/Criss/Intermediary/,monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt,output_dir=C:/Criss/Intermediary/,output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=C:/Criss/temp/
+C:\Criss> C:/Criss/c2exe.exe configFile=C:/Criss/config.txt executableFile=C:/Criss/Julia/Julia-1.10.4/julia.exe interpreterFile=-p,4,--project=C:/Criss/jl/ scriptFile=C:/Criss/jl/application.jl configInstructions=configFile=/home/Criss/jl/config.txt,interface_Function=file_Monitor,webPath=C:/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=C:/Criss/Intermediary/,monitor_file=C:/Criss/Intermediary/intermediary_write_C.txt,output_dir=C:/Criss/Intermediary/,output_file=C:/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=C:/Criss/temp/
 
 谷歌安卓系統 之 Termux 系統 之 烏班圖系統 ( Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 )
 
@@ -612,7 +612,7 @@ root@localhost:~# /bin/gcc /home/Criss/c/c2exe.c -o /home/Criss/c2exe.exe
 
 控制臺命令列 ( bash ) 運行啓動指令 :
 
-root@localhost:~# /home/Criss/c2exe.exe configFile=/home/Criss/config.txt executableFile=/bin/julia interpreterFile=-p,4,--project=/home/Criss/jl/ scriptFile=/home/Criss/jl/application.jl configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+root@localhost:~# /home/Criss/c2exe.exe configFile=/home/Criss/config.txt executableFile=/bin/julia interpreterFile=-p,4,--project=/home/Criss/jl/ scriptFile=/home/Criss/jl/application.jl configInstructions=configFile=/home/Criss/jl/config.txt,interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
 
 控制臺啓動傳參釋意, 各參數之間以一個逗號字符 ( , ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( = ) 連接, 即類比 Key=Value 的形式 :
 
@@ -626,7 +626,7 @@ root@localhost:~# /home/Criss/c2exe.exe configFile=/home/Criss/config.txt execut
 
 5. (選), (鍵 scriptFile 固定, 值 /home/Criss/jl/application.jl 自定義, 例如 [ /home/Criss/jl/application.jl, /home/Criss/py/application.py, /home/Criss/js/application.js ] 可自定義取其一配置), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的存儲路徑全名, 預設值爲 :  scriptFile=/home/Criss/jl/application.jl
 
-6. (選), (鍵 configInstructions 固定, 取值自定義, 且可爲空, 即取 configInstructions= 的形式, 亦可不傳入該參數), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 代碼文檔 c2exe.c 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行環境, 預設值爲 :  configInstructions=interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
+6. (選), (鍵 configInstructions 固定, 取值自定義, 且可爲空, 即取 configInstructions= 的形式, 亦可不傳入該參數), 用於傳入程式 ( Programming ) 設計語言 ( Julia, Python3 Node.js ) 代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行參數, 若爲多參數, 則各參數之間用一個逗號 ( , ) 字符連接, 代碼文檔 c2exe.c 已設計爲可自動將逗號 ( , ) 字符替換爲空格字符 ( SPACE ) ( 00100000 ), 然後再傳入代碼脚本 ( Script ) 檔 ( application.jl, application.py, application.js ) 的運行環境, 預設值爲 :  configInstructions=configFile=/home/Criss/jl/config.txt,interface_Function=file_Monitor,webPath=/home/Criss/html/,host=::0,port=10001,key=username:password,number_Worker_threads=1,isConcurrencyHierarchy=Tasks,is_monitor=false,time_sleep=0.02,monitor_dir=/home/Criss/Intermediary/,monitor_file=/home/Criss/Intermediary/intermediary_write_C.txt,output_dir=/home/Criss/Intermediary/,output_file=/home/Criss/Intermediary/intermediary_write_Julia.txt,temp_cache_IO_data_dir=/home/Criss/temp/
 
 ![]()
 
