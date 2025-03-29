@@ -2,11 +2,12 @@
 #### Node.js, Julia, Python, C
 #### 混合編程 ( Hybrid Programming ), 程式設計語言 ( Computer Programming Language ) 之間, 使用外設硬盤 ( Hard Disk ) 或網卡 ( Network Interface Card ) 作橋 ( Intermediary ), 跨語言 ( Cross Language ) 的數據交換 ( Information exchange pattern ), 就像十字路口一樣的阡陌交通.
 ---
-<p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;>
+
+<p word-wrap: break-word; word-break: break-all; overflow-x: hidden; overflow-x: hidden;></p>
+
 一. 使用外設硬盤 ( Hard Disk ) 作橋 ( Intermediary ), 創建監聽硬盤 ( Hard Disk ) 文檔 ( file ) 的伺服器 ( file_Monitor ), 監聽自定義指定的媒介文檔, 從自定義指定的輸入文檔 ( monitor_file ) 讀取數據 ( Data ), 經過運算 ( Data Processing ), 將運算結果 ( Data ) 寫入自定義指定的輸出文檔 ( output_file ), 從而完成一次跨語言 ( Cross Language ) 的數據交換 ( Information exchange ).
 
 二. 使用外設網卡 ( Network Interface Card ) 作橋 ( Intermediary ), 創建監聽伺服器 ( http_Server ), 創建用戶端鏈接器 ( http_Client ), 伺服器 ( http_Server ) 監聽指定網卡 ( Network Interface Card ) 的自定義的埠 ( Port ), 從指定的埠號讀取用戶端 ( http_Client ) 發送的請求數據 ( required ), 經過運算 ( Data Processing ), 將運算結果 ( Response ) 回饋至對應發送請求的用戶端 ( http_Client ), 從而完成一次跨語言 ( Cross Language ) 的數據交換 ( Information exchange ).
-</p>
 
 ---
 
