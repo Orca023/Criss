@@ -549,7 +549,7 @@ Compiler: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 
 程式代碼脚本檔 `application.c` 裏, 解析 JSON 字符串, 使用使用了第三方模組 `cJSON` 擴展包 ( packages ) 裏的 `cJSON.c` , `cJSON.h` 代碼脚本檔,
 
-所以, 需事先下載, 配置在項目空間的 [ `cJSON/cJSON.c` , `cJSON/cJSON.h` ] 目錄下, 並在編譯過程中指定鏈接, 才能正常編譯.
+所以, 需事先下載, 然後將之分別配置在項目空間的 [ `cJSON/cJSON.c` , `cJSON/cJSON.h` ] 路徑, 並在編譯指令中指定鏈接, 才能正確編譯.
 
 可在作業系統 ( Operating System ) 控制臺命令列窗口 ( bash, cmd ) 使用 git 工具下載第三方模組 `cJSON` 擴展包 :
 ```
@@ -572,6 +572,7 @@ root@localhost:~# mv ./cJSON/ /Criss/c/cJSON/
 [程式設計 C 語言 ( ANSI C ) 解析 JSON 字符串工具 cJSON 第三方擴展模組 ( module ) ( packages ) 的官方 GitHub 網站倉庫頁](https://github.com/DaveGamble/cJSON): 
 https://github.com/DaveGamble/cJSON.git
 
+
 使用説明：
 
 作業系統 ( Operating System : Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) :
@@ -586,7 +587,7 @@ C:\> chcp 65001
 ```
 運行指令：
 ```
-C:\> C:/Criss/c/application.exe configFile=C:/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=C:/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=C:/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/ requestData={"Client_say":"language-C-Socket-client-connection-在這裏輸入向服務端發送的待處理的數據.","time":"2021-04-24T14:05:33.286"}
+C:\> C:/Criss/c/application.exe configFile=C:/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=C:/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=C:/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/
 ```
 
 作業系統 ( Operating System : Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280 ) :
@@ -597,7 +598,7 @@ root@localhost:~# /usr/bin/gcc /home/Criss/c/application.c /home/Criss/c/Interfa
 ```
 運行指令：
 ```
-root@localhost:~# /home/Criss/c/application.exe configFile=/home/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=/home/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=/home/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/ requestData={"Client_say":"language-C-Socket-client-connection-在這裏輸入向服務端發送的待處理的數據.","time":"2021-04-24T14:05:33.286"}
+root@localhost:~# /home/Criss/c/application.exe configFile=/home/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=/home/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=/home/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/
 ```
 
 控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( `SPACE` ) ( `00100000` ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( `=` ) 連接, 即類比 Key=Value 的形式 :
