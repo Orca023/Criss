@@ -577,11 +577,11 @@ https://github.com/DaveGamble/cJSON.git
 
 編譯指令：
 ```
-C:\> C:\MinGW64\bin\gcc.exe C:/Criss/c/application.c C:/Criss/c/Interface.c C:/Criss/c/cjson/cJSON.c -o C:/Criss/c/application.exe -lm -lws2_32
+C:\> C:\MinGW64\bin\gcc.exe C:/Criss/c/application.c C:/Criss/c/Interface.c C:/Criss/c/cJSON/cJSON.c -o C:/Criss/c/application.exe -lm -lws2_32
 ```
 
 ```
-root@localhost:~# /usr/bin/gcc /home/Criss/c/application.c /home/Criss/c/Interface.c /home/Criss/c/cjson/cJSON.c -o /home/Criss/c/application.exe -lm
+root@localhost:~# /usr/bin/gcc /home/Criss/c/application.c /home/Criss/c/Interface.c /home/Criss/c/cJSON/cJSON.c -o /home/Criss/c/application.exe -lm
 ```
 控制臺顯示中文字符指令;
 ```
