@@ -567,7 +567,7 @@ root@localhost:~# git clone https://github.com/DaveGamble/cJSON.git
 ```
 root@localhost:~# mv ./cJSON/ /Criss/c/cJSON/
 ```
-或是直接使用瀏覽器 ( Browser ) 訪問第三方模組 `cJSON` 的官方 GitHub 網站倉庫頁下載 `cJSON.zip` 壓縮包之後, 自行解壓縮配置到指定目錄, 即可.
+或是直接使用瀏覽器 ( Browser ) 訪問第三方模組 `cJSON` 的官方 GitHub 網站倉庫頁 [ `https://github.com/DaveGamble/cJSON` ] 找到下載鏈接, 下載 `cJSON.zip` 壓縮包之後, 自行解壓縮配置到指定目錄, 即可.
 
 [程式設計 C 語言 ( ANSI C ) 解析 JSON 字符串工具 cJSON 第三方擴展模組 ( module ) ( packages ) 的官方 GitHub 網站倉庫頁](https://github.com/DaveGamble/cJSON): 
 https://github.com/DaveGamble/cJSON.git
