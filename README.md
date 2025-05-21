@@ -572,29 +572,124 @@ root@localhost:~# mv ./cJSON/ /Criss/c/cJSON/
 [程式設計 C 語言 ( ANSI C ) 解析 JSON 字符串工具 cJSON 第三方擴展模組 ( module ) ( packages ) 的官方 GitHub 網站倉庫頁](https://github.com/DaveGamble/cJSON): 
 https://github.com/DaveGamble/cJSON.git
 
-
 使用説明：
+
+作業系統 ( Operating System : Acer-NEO-2023 Windows10 x86_64 Inter(R)-Core(TM)-m3-6Y30 ) :
 
 編譯指令：
 ```
 C:\> C:\MinGW64\bin\gcc.exe C:/Criss/c/application.c C:/Criss/c/Interface.c C:/Criss/c/cJSON/cJSON.c -o C:/Criss/c/application.exe -lm -lws2_32
 ```
-
-```
-root@localhost:~# /usr/bin/gcc /home/Criss/c/application.c /home/Criss/c/Interface.c /home/Criss/c/cJSON/cJSON.c -o /home/Criss/c/application.exe -lm
-```
 控制臺顯示中文字符指令;
 ```
-root@localhost:~# chcp 65001
+C:\> chcp 65001
 ```
 運行指令：
 ```
 C:\> C:/Criss/c/application.exe configFile=C:/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=C:/Criss/Intermediary/ monitor_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=C:/Criss/Intermediary/ output_file=C:/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=C:/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=C:/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/ requestData={"Client_say":"language-C-Socket-client-connection-在這裏輸入向服務端發送的待處理的數據.","time":"2021-04-24T14:05:33.286"}
 ```
 
+作業系統 ( Operating System : Google-Pixel-7 Android-11 Termux-0.118 Ubuntu-22.04-LTS-rootfs Arm64-aarch64 MSM8998-Snapdragon835-Qualcomm®-Kryo™-280 ) :
+
+編譯指令：
+```
+root@localhost:~# /usr/bin/gcc /home/Criss/c/application.c /home/Criss/c/Interface.c /home/Criss/c/cJSON/cJSON.c -o /home/Criss/c/application.exe -lm
+```
+運行指令：
 ```
 root@localhost:~# /home/Criss/c/application.exe configFile=/home/Criss/c/config.txt interface_Function=tcp_Server is_monitor=true monitor_dir=/home/Criss/Intermediary/ monitor_file=/home/Criss/Intermediary/intermediary_write_Nodejs.txt output_dir=/home/Criss/Intermediary/ output_file=/home/Criss/Intermediary/intermediary_write_C.txt temp_cache_IO_data_dir=/home/Criss/temp/ key=username:password IPversion=IPv6 serverHOST=::0 serverPORT=10001 webPath=/home/Criss/html/ time_sleep=1.0 time_out=1.0 clientHOST=::1 clientPORT=10001 requestConnection=keep-alive requestPath=/ requestData={"Client_say":"language-C-Socket-client-connection-在這裏輸入向服務端發送的待處理的數據.","time":"2021-04-24T14:05:33.286"}
 ```
+
+控制臺啓動傳參釋意, 各參數之間以一個空格字符 ( `SPACE` ) ( `00100000` ) 分隔, 鍵(Key) ~ 值(Value) 之間以一個等號字符 ( `=` ) 連接, 即類比 Key=Value 的形式 :
+
+1. (必), (自定義), 編譯成功之後取得二進制可執行檔啓動存儲路徑全名, 例如可取值爲 :  `C:/Criss/c/application.exe`
+
+2. (選), (鍵 `configFile 固定, 值 `C:/Criss/c/config.txt` 自定義), 用於傳入配置文檔的保存路徑全名, 預設值爲 :  `configFile=C:/Criss/c/config.txt`
+
+3. (選), (鍵 `interface_Function` 固定, 值 `file_Monitor` 自定義, [ `file_Monitor`, `tcp_Server`, `tcp_Client` ] 取其一), 用於傳入選擇啓動哪一種接口服務, 外設硬盤 ( Hard Disk ) 文檔 ( File ) 作橋, 外設網卡 ( Network Interface Card ) 埠 ( Port ) 作橋, 預設值爲 :  `interface_Function=tcp_Server`
+
+以下是當參數 : `interface_Function` 取 : `file_Monitor` 值時, 可在控制臺命令列傳入的參數 :
+
+4. (選), (鍵 `is_monitor` 固定, 值 `false` 自定義, [ `true`, `false` ] 取其一), 用於判斷只運行一次, 還是保持文檔監聽, 預設值爲 :  `is_monitor=false`
+
+5. (選), (鍵 `time_sleep` 固定, 值 `1.0` 自定義), 用於傳入監聽文檔輪詢延遲時長，單位 ( Unit ) 爲秒 ( Second ), 取 `0` 值表示不做暫停延遲動作, 預設值爲 :  `time_sleep=1.0`
+
+6. (選), (鍵 `monitor_dir` 固定, 值 `C:/Criss/Intermediary/` 自定義), 用於接收傳值的媒介目錄 ( 監聽文件夾 ) 存儲路徑全名, 預設值爲 :  `monitor_dir=C:/Criss/Intermediary/`
+
+7. (選), (鍵 `monitor_file` 固定, 值 `C:/Criss/Intermediary/intermediary_write_Nodejs.txt` 自定義), 用於接收傳值的媒介文檔 ( 監聽文檔 ) 存儲路徑全名, 預設值爲 :  `monitor_file=C:/Criss/Intermediary/intermediary_write_Nodejs.txt`
+
+8. (選), (鍵 `output_dir` 固定, 值 `C:/Criss/Intermediary/` 自定義), 用於輸出運算結果傳值的媒介目錄 ( 運算結果文檔儲存文件夾 ) 存儲路徑全名, 預設值爲 :  `output_dir=C:/Criss/Intermediary/`
+
+9. (選), (鍵 `output_file` 固定, 值 `C:/Criss/Intermediary/intermediary_write_C.txt` 自定義), 用於輸出運算結果傳值的媒介文檔 ( 運算結果輸出保存文檔 ) 存儲路徑全名, 預設值爲 :  `output_file=C:/Criss/Intermediary/intermediary_write_C.txt`
+
+10. (選), (鍵 `temp_cache_IO_data_dir` 固定, 值 `C:/Criss/temp/` 自定義), 用於暫存傳入傳出數據的臨時媒介文件夾路徑全名, 預設值爲 :  `temp_cache_IO_data_dir=C:/Criss/temp/`
+
+以下是當參數 : `interface_Function` 取 : `tcp_Server` 值時, 可在控制臺命令列傳入的參數 :
+
+11. (選), (鍵 `IPversion` 固定, 值 `IPv6` 自定義, 例如 [ `IPv6`, `IPv4` ] 取其一), 用於指定服務器 ( Server ) 監聽 IP 地址版本類型, 取 `IPv6` 值表示監聽 version 6 版本的 IP ( Internet Protocol ) 地址號碼, 取 `IPv4` 值表示監聽 version 4 版本的 IP ( Internet Protocol ) 地址號碼, 二者只能取其一, 預設值爲 :  `IPversion=IPv6`
+
+12. (選), (鍵 `serverHOST` 固定, 值 `::0` 自定義, 例如 [ `::0`, `::1`, `0.0.0.0`, `127.0.0.1`, `localhost` ] 取其一), 用於傳入伺服器 ( `tcp_Server` ) 監聽的外設網卡 ( Network Interface Card ) 地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  `serverHOST=::0`
+
+13. (選), (鍵 `serverPORT` 固定, 值 `10001` 自定義), 用於傳入伺服器 ( `tcp_Server` ) 監聽的外設網卡 ( Network Interface Card ) 自定義設定的埠號 ( 1 ~ 65535 ), 預設值爲 :  `serverPORT=10001`
+
+14. (選), (鍵 `key` 固定, 賬號密碼連接符 : 固定, 值 `username` 和 `password` 自定義), 用於傳入自定義的訪問網站驗證 ( `Authorization` ) 用戶名和密碼, 預設值爲 :  `key=username:password`
+
+15. (選), (鍵 `webPath` 固定, 值 `C:/Criss/html/` 自定義), 用於傳入伺服器 ( `http_Server` ) 啓動運行的自定義的根目錄 (項目空間) 路徑全名, 預設值爲 :  `webPath=C:/Criss/html/`
+
+16. (選), (鍵 `time_out` 固定, 值 `1.0` 自定義), 用於傳入客戶端請求數據讀取超時中止時長，單位 ( Unit ) 爲秒 ( Second ), 取 `0` 值表示不做判斷是否超時, 預設值爲 :  `time_out=0`
+
+17. (選), (鍵 `session` 固定, 取值自定義, 例如配置爲 `{"request_Key->username:password":"username:password"}` 值), 用於傳入服務端 ( Server ) 自定義設定的 Session 值, 預設值爲 :  `session={}`
+
+以下是當參數 : `interface_Function` 取 : `tcp_Client` 值時, 可在控制臺命令列傳入的參數 :
+
+18. (選), (鍵 `clientHOST` 固定, 值 `::1` 自定義, 例如 [ `::1`, `127.0.0.1`, `localhost` ] 取其一), 用於傳入用戶端連接器 ( `tcp_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  `clientHOST=::1`
+
+19. (選), (鍵 `clientPORT` 固定, 值 `10001` 自定義), 用於傳入用戶端連接器 ( `tcp_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  `clientPORT=10001`
+
+20. (選), (鍵 `requestConnection` 固定, 可取 `keep-alive` 自定義, 例如 [ `keep-alive`, `close` ] 取其一), 用於傳入用戶端 ( Client ) 向服務端 ( Server ) 發送的請求頭 ( html head Connection ) 參數, 表示用戶端連接器 ( `tcp_Client` ) 向服務端 ( `tcp_Server` ) 鏈接狀態的保持時長, 取 `keep-alive` 值表示長連接 (即保持鏈接狀態不斷開), 取 `close` 值表示短連接 (當服務端接收和響應數據傳輸完畢即斷開與用戶端的鏈接), 預設值爲 :  `requestConnection=keep-alive`
+
+21. (選), (鍵 `requestURL` 固定, 取值自定義, 例如配置爲 `http://username:password@[::1]:10001/` 值), 用於傳入用戶端連接器 ( `tcp_Client` ) 向服務端 ( tcp_Server ) 發送請求的地址, 萬維網統一資源定位系統 ( Uniform Resource Locator ) 地址字符串, 預設值爲 :  `requestURL=""`
+
+22. (選), (鍵 `requestPath` 固定, 取值自定義, 例如配置爲 `/` 值), 用於傳入用戶端連接器 ( `tcp_Client` ) 向服務端 ( tcp_Server ) 發送請求的路徑分支標識字符串, 預設值爲 :  `requestPath=/`
+
+16. (選), (鍵 `time_out` 固定, 值 `1.0` 自定義), 用於傳入客戶端請求數據讀取超時中止時長，單位 ( Unit ) 爲秒 ( Second ), 取 `0` 值表示不做判斷是否超時, 預設值爲 :  `time_out=0`
+
+23. (選), (鍵 `requestMethod` 固定, 值 `POST` 自定義, 例如 [ `POST`, `GET` ] 取其一), 用戶端連接器 ( `http_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的類型, 預設值爲 :  `requestMethod=POST`
+
+24. (選), (鍵 `requestFrom` 固定, 取值自定義, 例如配置爲 `user@email.com` 值), 用於傳入用戶端 ( Client ) 向服務端 ( Server ) 發送請求的頭 ( html head From ) 參數, 預設值爲 :  `requestFrom=user@email.com`
+
+25. (選), (鍵 `requestReferer` 固定, 取值自定義, 例如配置爲 `http://username:password@localhost:10001/` 值), 用於傳入用戶端 ( Client ) 向服務端 ( Server ) 發送請求的頭 ( html head Referer ) 參數, 預設值爲 :  `requestReferer=http://username:password@localhost:10001/`
+
+26. (選), (鍵 `requestAuthorization` 固定, 賬號密碼連接符 : 固定, 值 `username` 和 `password` 自定義), 用於傳入用戶端 ( Client ) 向服務端 ( Server ) 發送的請求頭 ( html head Authorization ) 參數, 表示用戶端連接器 ( `http_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的驗證 ( `Authorization` ) 的賬號密碼字符串, 預設值爲 :  `requestAuthorization=username:password`
+
+27. (選), (鍵 `requestCookie` 固定, 其中 Cookie 名稱 `Session_ID` 可以設計爲固定, Cookie 值 `request_Key->username:password` 可以設計爲自定義), 用於傳入傳入用戶端 ( Client ) 向服務端 ( Server ) 發送的請求頭 ( html head Cookie ) 參數, 表示用戶端連接器 ( `http_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的 Cookies 值字符串, 預設值爲 :  `requestCookie=Session_ID=request_Key->username:password`
+
+28. (選), (鍵 `requestData` 固定, 取值自定義, 例如配置爲 `{"request_Key->username:password":"username:password"}` 值), 用於傳入用戶端 ( Client ) 向服務端 ( Server ) 發送的請求體 ( html body ) 數據字符串值, 預設值爲 :  `requestData=""`
+
+![]()
+
+Compiler :
+
+Minimalist GNU on Windows ( MinGW-w64 ) :  mingw64-8.1.0-release-posix-seh-rt_v6-rev0
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方網站](https://www.mingw-w64.org/): 
+https://www.mingw-w64.org/
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方下載頁](https://www.mingw-w64.org/downloads/): 
+https://www.mingw-w64.org/downloads/
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 作者官方 GitHub 網站賬戶](https://github.com/niXman): 
+https://github.com/niXman
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫](https://github.com/nixman/mingw-builds): 
+https://github.com/nixman/mingw-builds.git
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 官方 GitHub 網站倉庫預編譯二進制檔下載頁](https://github.com/niXman/mingw-builds-binaries/releases): 
+https://github.com/niXman/mingw-builds-binaries/releases
+
+[程式設計 C 語言 gcc, g++ 編譯器 ( Compiler ) 之 MinGW-w64 預編譯二進制檔下載頁](https://sourceforge.net/projects/mingw-w64/): 
+https://sourceforge.net/projects/mingw-w64/
+
 
 
 ---
