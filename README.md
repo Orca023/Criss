@@ -525,6 +525,18 @@ https://julialang.org/packages/
 [程式設計 Julia 語言解釋器 ( Interpreter ) 官方 General.jl 模組 GitHub 網站倉庫](https://github.com/JuliaRegistries/General): 
 https://github.com/JuliaRegistries/General.git
 
+
+
+---
+
+
+
+
+[程式設計 C 語言 ( ANSI C ) 解析 JSON 字符串工具 cJSON 第三方擴展模組 ( module ) ( packages ) 的官方 GitHub 網站倉庫頁](https://github.com/DaveGamble/cJSON): 
+https://github.com/DaveGamble/cJSON.git
+
+
+
 ---
 
 Window-cmd : startServer.bat
