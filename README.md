@@ -643,6 +643,8 @@ root@localhost:~# /home/Criss/c/application.exe configFile=/home/Criss/c/config.
 
 以下是當參數 : `interface_Function` 取 : `tcp_Client` 值時, 可在控制臺命令列傳入的參數 :
 
+11. (選), (鍵 `IPversion` 固定, 值 `IPv6` 自定義, 例如 [ `IPv6`, `IPv4` ] 取其一), 用於指定用戶端 ( Client ) 鏈接的 IP 地址版本類型, 取 `IPv6` 值表示鏈接 version 6 版本的 IP ( Internet Protocol ) 地址號碼, 取 `IPv4` 值表示鏈接 version 4 版本的 IP ( Internet Protocol ) 地址號碼, 二者只能取其一, 預設值爲 :  `IPversion=IPv6`
+
 18. (選), (鍵 `clientHOST` 固定, 值 `::1` 自定義, 例如 [ `::1`, `127.0.0.1`, `localhost` ] 取其一), 用於傳入用戶端連接器 ( `tcp_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的地址 ( IPv6, IPv4 ) 或域名, 預設值爲 :  `clientHOST=::1`
 
 19. (選), (鍵 `clientPORT` 固定, 值 `10001` 自定義), 用於傳入用戶端連接器 ( `tcp_Client` ) 向外設網卡 ( Network Interface Card ) 發送請求的埠號 ( 1 ~ 65535 ), 預設值爲 :  `clientPORT=10001`
